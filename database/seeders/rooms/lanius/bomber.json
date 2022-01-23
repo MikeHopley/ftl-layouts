@@ -1,0 +1,17 @@
+{
+	"system": [
+		{ "x": 173, "y": 133, "shape": "vertical", "name": "piloting" },
+		{ "x": 244, "y": 237, "shape": "vertical", "name": "doors" },
+		{ "x":  68, "y": 203, "shape": "vertical", "name": "clone bay" },
+		{ "x": 103, "y":  98, "shape": "vertical", "name": "shields" },
+		{ "x": 103, "y": 239, "shape": "vertical", "name": "engines" },
+		{ "x": 245, "y":  99, "shape": "vertical", "name": "weapons" },
+		{ "x":  68, "y": 133, "shape": "vertical", "name": "cloaking" },
+		{ "x": 280, "y": 134, "shape": "vertical", "name": "mind control" },
+		{ "x": 280, "y": 205, "shape": "vertical", "name": "teleporter" }
+	],
+	"empty": [
+		{ "x": 102, "y": 169, "shape": "square" },
+		{ "x": 208, "y": 169, "shape": "square" }
+	]
+}

@@ -21,9 +21,10 @@ class ShipSeeder extends Seeder
 			if (!isset($ship->pirated)) {
 				Ship::create([
 					'name' => 'Pirate ' . $ship->name,
-					'type' => $ship->type . '_pirate',
+					'type' => $ship->type,
 					'class' => $ship->class,
 					'pirated' => false,
+					'is_pirate' => true,
 				]);
 			}
 		}

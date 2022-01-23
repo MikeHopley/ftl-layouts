@@ -1,0 +1,13 @@
+{
+	"system": [
+		{ "x": 154, "y": 179, "shape": "horizontal", "name": "piloting" },
+		{ "x":  49, "y": 214, "shape": "horizontal", "name": "clone bay" },
+		{ "x": 189, "y": 213, "shape": "square", "name": "shields" },
+		{ "x": 259, "y": 213, "shape": "horizontal", "name": "engines" },
+		{ "x": 118, "y": 213, "shape": "square", "name": "weapons" },
+		{ "x":  84, "y": 178, "shape": "horizontal", "name": "doors" },
+		{ "x": 224, "y": 179, "shape": "horizontal", "name": "hacking" }
+	],
+	"empty": [
+	]
+}

@@ -17,7 +17,10 @@ class SystemSeeder extends Seeder
 
 	private function seedSystems(Ship $ship)
 	{
-		$path = "/seeders/systems/{$ship->type}/{$ship->class}.json";
+		$path = match ($ship->is_pirate) {
+			true => "/seeders/systems/{$ship->baseType}/pirate/{$ship->class}.json",
+			false => "/seeders/systems/{$ship->type}/{$ship->class}.json",
+		};
 
 		if (!file_exists(database_path() . $path)) {
 			return;

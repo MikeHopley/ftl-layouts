@@ -17,7 +17,10 @@ class RoomSeeder extends Seeder
 
 	private function seedRooms(Ship $ship)
 	{
-		$path = "/seeders/rooms/{$ship->type}/{$ship->class}.json";
+		$path = match ($ship->is_pirate) {
+			true => "/seeders/rooms/{$ship->baseType}/pirate/{$ship->class}.json",
+			false => "/seeders/rooms/{$ship->type}/{$ship->class}.json",
+		};
 
 		if (!file_exists(database_path() . $path)) {
 			return;

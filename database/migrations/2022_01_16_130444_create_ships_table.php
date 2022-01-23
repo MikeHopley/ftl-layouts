@@ -20,6 +20,7 @@ class CreateShipsTable extends Migration
 			$table->string('type');
 			$table->string('class');
 			$table->boolean('pirated')->default(true);
+			$table->boolean('is_pirate')->default(false);
 
 			$table->timestamps();
 		});
