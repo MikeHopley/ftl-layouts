@@ -1,0 +1,59 @@
+[
+	{ "name": "Auto-Scout",	"type": "auto", "class": "scout", "pirated": false },
+	{ "name": "Auto-Surveyor",	"type": "auto", "class": "surveyor", "pirated": false },
+	{ "name": "Auto-Assault", "type": "auto",	"class": "assault", "pirated": false },
+	{ "name": "Auto-Hacker", "type": "auto", "class": "hacker", "pirated": false },
+
+	{ "name": "Crystal Scout", "type": "crystal", "class": "scout", "pirated": false },
+	{ "name": "Crystal Outrider", "type": "crystal", "class": "outrider", "pirated": false },
+	{ "name": "Crystal Bomber", "type": "crystal", "class": "bomber", "pirated": false },
+	{ "name": "Crystal Instigator", "type": "crystal", "class": "instigator", "pirated": false },
+	
+	{ "name": "Engi Scout", "type": "engi", "class": "scout", "pirated": false },
+	{ "name": "Engi Outrider", "type": "engi", "class": "outrider", "pirated": false },
+	{ "name": "Engi Bomber", "type": "engi", "class": "bomber", "pirated": false },
+	{ "name": "Engi Hacker", "type": "engi", "class": "hacker", "pirated": false },
+
+	{ "name": "Federation Scout", "type": "federation", "class": "scout" },
+	{ "name": "Federation Outrider", "type": "federation", "class": "outrider" },
+	{ "name": "Federation Bomber", "type": "federation", "class": "bomber" },
+	{ "name": "Federation Hacker", "type": "federation", "class": "hacker" },
+
+	{ "name": "Lanius Scout", "type": "lanius", "class": "scout", "pirated": false },
+	{ "name": "Lanius Bomber", "type": "lanius", "class": "bomber", "pirated": false },
+
+	{ "name": "Mantis Scout", "type": "mantis", "class": "scout" },
+	{ "name": "Mantis Interceptor", "type": "mantis", "class": "interceptor" },
+	{ "name": "Mantis Fighter", "type": "mantis", "class": "fighter" },
+	{ "name": "Mantis Assault", "type": "mantis", "class": "assault" },
+	{ "name": "Mantis Bomber", "type": "mantis", "class": "bomber" },
+	{ "name": "Mantis Aggressor", "type": "mantis", "class": "aggressor" },
+
+	{ "name": "Rebel Fighter", "type": "rebel", "class": "fighter" },
+	{ "name": "Rebel Invader", "type": "rebel", "class": "invader" },
+	{ "name": "Rebel Rigger", "type": "rebel", "class": "rigger" },
+	{ "name": "Rebel Disruptor", "type": "rebel", "class": "disruptor" },
+	{ "name": "Rebel Elite Fighter", "type": "rebel", "class": "elite_fighter", "pirated": false },
+	{ "name": "Rebel Elite Assault", "type": "rebel", "class": "elite_assault", "pirated": false },
+
+	{ "name": "Rock Scout", "type": "rock", "class": "scout" },
+	{ "name": "Rock Investigator", "type": "rock", "class": "investigator" },
+	{ "name": "Rock Fighter", "type": "rock", "class": "fighter" },
+	{ "name": "Rock Interceptor", "type": "rock", "class": "interceptor" },
+	{ "name": "Rock Assault", "type": "rock", "class": "assault", "pirated": false },
+	{ "name": "Rock Aggressor", "type": "rock", "class": "aggressor", "pirated": false },
+	{ "name": "Rock Assault (Elite)", "type": "rock", "class": "assault_elite", "pirated": false },
+	
+	{ "name": "Slug Interceptor", "type": "slug", "class": "interceptor" },
+	{ "name": "Slug Scout", "type": "slug", "class": "scout" },
+	{ "name": "Slug Light-Cruiser", "type": "slug", "class": "light-cruiser" },
+	{ "name": "Slug Light-Surveyor", "type": "slug", "class": "light-surveyor" },
+	{ "name": "Slug Assault", "type": "slug", "class": "assault" },
+	{ "name": "Slug Instigator", "type": "slug", "class": "instigator" },
+
+	{ "name": "Zoltan Fighter", "type": "zoltan", "class": "fighter" },
+	{ "name": "Zoltan Instigator", "type": "zoltan", "class": "instigator" },
+	{ "name": "Zoltan Bomber", "type": "zoltan", "class": "bomber" },
+	{ "name": "Zoltan Hacker", "type": "zoltan", "class": "hacker" }
+	
+]

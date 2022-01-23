@@ -1,0 +1,15 @@
+{
+	"system": [
+		{ "x": 137, "y": 198, "shape": "horizontal", "name": "piloting" },
+		{ "x": 209, "y": 234, "shape": "horizontal", "name": "doors" },
+		{ "x": 138, "y": 128, "shape": "square", "name": "clone bay" },
+		{ "x": 209, "y": 268, "shape": "vertical", "name": "oxygen" },
+		{ "x": 138, "y": 304, "shape": "square", "name": "shields" },
+		{ "x": 138, "y": 375, "shape": "horizontal", "name": "engines" },
+		{ "x": 208, "y": 163, "shape": "square", "name": "weapons" },
+		{ "x": 103, "y": 163, "shape": "vertical", "name": "cloaking" },
+		{ "x": 138, "y": 233, "shape": "vertical", "name": "teleporter" }
+	],
+	"empty": [
+	]
+}

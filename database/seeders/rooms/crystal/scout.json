@@ -1,0 +1,12 @@
+{
+	"system": [
+		{ "x": 138, "y": 269, "shape": "horizontal", "name": "piloting" },
+		{ "x": 208, "y": 269, "shape": "vertical", "name": "medbay" },
+		{ "x": 138, "y": 127, "shape": "vertical", "name": "oxygen" },
+		{ "x": 173, "y": 127, "shape": "vertical", "name": "shields" },
+		{ "x": 139, "y": 304, "shape": "horizontal", "name": "engines" },
+		{ "x": 174, "y": 198, "shape": "square", "name": "weapons" }
+	],
+	"empty": [
+	]
+}

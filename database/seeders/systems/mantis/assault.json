@@ -1,0 +1,10 @@
+[
+	{ "min": 1, "max": 3, "name": "piloting" },
+	{ "min": 1, "max": 3, "name": "doors", "optional": true },
+	{ "min": 1, "max": 3, "name": "oxygen" },
+	{ "min": 1, "max": 3, "name": "clone bay" },
+	{ "min": 1, "max": 2, "name": "teleporter" },
+	{ "min": 2, "max": 7, "name": "shields" },
+	{ "min": 1, "max": 5, "name": "engines" },	
+	{ "min": 1, "max": 7, "name": "weapons" }
+]
