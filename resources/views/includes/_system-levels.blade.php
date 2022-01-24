@@ -7,6 +7,10 @@
 		<span class="system-range">{{ $system->s1_min }} &mdash; {{ $system->s8_max }}
 	</p>
 
+	@if($system->optional)
+		<p>Optional system</p>
+	@endif
+
 	@include('includes._system-levels-table')
 
 	<div class="close-system" data-system="{{ $system->id }}">Close</div>

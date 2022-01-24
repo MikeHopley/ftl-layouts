@@ -16,8 +16,8 @@
 
 		@if ($ship->hasRooms())
 			@foreach ($ship->rooms as $room)			
-				<div 
-					class="drop-target "
+				<div hidden
+					class="drop-target transparent"
 					data-shape="{{ $room->shape }}"
 					data-origin_x="{{ $room->origin_x }}"
 					data-origin_y="{{ $room->origin_y }}"
@@ -28,8 +28,7 @@
 				</div>
 
 				<!-- 
-					Not actually a drop target, 
-					just reusing the styles.
+					Not actually a drop target, just reusing the styles.
 				-->
 				<div hidden
 					id="room_block_{{ $room->id }}"

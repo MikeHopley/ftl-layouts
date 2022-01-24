@@ -1,0 +1,14 @@
+{
+	"system": [
+		{ "x": 120, "y": 164, "shape": "vertical", "name": "piloting" },
+		{ "x":  84, "y": 234, "shape": "vertical", "name": "oxygen" },
+		{ "x": 154, "y": 234, "shape": "square", "name": "shields" },
+		{ "x": 155, "y": 304, "shape": "horizontal", "name": "engines" },
+		{ "x": 225, "y": 269, "shape": "horizontal", "name": "weapons" },
+		{ "x": 191, "y": 198, "shape": "horizontal", "name": "drones" },
+		{ "x": 119, "y": 234, "shape": "vertical", "name": "medbay" },
+		{ "x": 225, "y": 234, "shape": "horizontal", "name": "doors" }
+	],
+	"empty": [
+	]
+}
