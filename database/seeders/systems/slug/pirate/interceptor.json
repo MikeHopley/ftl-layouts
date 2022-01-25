@@ -1,0 +1,8 @@
+[
+	{ "min": 1, "max": 3, "name": "oxygen" },
+	{ "min": 1, "max": 3, "name": "piloting" },
+	{ "min": 2, "max": 8, "name": "shields" },
+	{ "min": 1, "max": 8, "name": "engines" },	
+	{ "min": 2, "max": 8, "name": "weapons" },
+	{ "min": 1, "max": 3, "name": "doors", "optional": true }
+]

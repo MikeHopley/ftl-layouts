@@ -17,6 +17,17 @@ class LevelCalculatorTest extends TestCase
 	public function systemLevels()
 	{
 		return [
+			[1, 0, [ // Slug Instigator has this broken code
+				[1, 1],
+				[1, 1],
+				[1, 1],
+				[1, 1],
+				[1, 1],
+				[1, 1],
+				[1, 1],
+				[1, 1],
+			]],
+
 			[1, 1, [
 				[1, 1],
 				[1, 1],

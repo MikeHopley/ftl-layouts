@@ -34,10 +34,13 @@ class LevelCalculator
 		// That number is 0 -- 1 in sectors 1 and 2, and 0 -- 2 afterwards.
 		// Therefore adding this number gives us the max. for that sector.
 		$bonus = $sector > 2 ? 2 : 1;
-		$result = (int) floor($this->interpolated($sector) + $bonus);
+		$result = $this->interpolated($sector) + $bonus;
 
 		// Cap it to the blueprint maximum
-		return $result > $this->max ? $this->max : $result;
+		$capped = $result > $this->max ? $this->max : $result;
+
+		// Pirate Slug Instigator has blueprint max of 0. Must be at least 1
+		return $capped > 0 ? $capped : 1;
 	}
 
 	public function systems()

@@ -1,0 +1,11 @@
+{
+	"system": [
+		{ "x": 155, "y": 108, "shape": "horizontal", "name": "piloting" },
+		{ "x": 120, "y": 178, "shape": "vertical", "name": "oxygen" },
+		{ "x": 155, "y": 142, "shape": "vertical", "name": "shields" },
+		{ "x": 225, "y": 178, "shape": "vertical", "name": "engines" },
+		{ "x": 189, "y": 142, "shape": "vertical", "name": "weapons" }
+	],
+	"empty": [
+	]
+}
