@@ -8,15 +8,14 @@
 		<link rel="stylesheet" href="/css/main.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<div class="content-wrapper">
+	<body class="homepage flow">
+		<div>
 			
-				<div class="text">
-					<div>
-						<p class="breadcrumb"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > Enemy ships</p>
-						<h1>{{ $title }}</h1>
-					</div>
-				</div>			
+				
+		<p class="breadcrumb homepage-crumbs"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > Enemy ships</p>
+						
+		<h1 class="homepage-title">{{ $title }}</h1>
+							
 
 			<div class="flow">
 				{{ $slot }}

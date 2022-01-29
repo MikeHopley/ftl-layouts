@@ -11,6 +11,9 @@ body {
 	line-height: 1.5;
 	--sidebar-width: 30ch;
 }
+.homepage {
+	padding: 2rem;
+}
 .sidebar {
 	width: var(--sidebar-width);
 	background: #ddd;
@@ -130,6 +133,105 @@ td.center, th.center {
 td, th {
 	padding:  0.25rem 0.5rem;
 	border-bottom:  1px solid grey;
+}
+
+.home-nav {
+	display: flex;
+	place-items: center center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+.home-nav li {
+	height: 100%;
+	width: 250px;
+	height: 180px;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.home-nav a {
+	height: 100%;
+	display: block;
+	color: white;
+	font-size: 200%;
+	font-weight: bold;
+	padding: 1rem;
+	text-decoration: none;
+	text-align: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.home-nav a span {
+	background:rgba(0,0,0, 0.75);
+	display: inline-block;
+	padding: 0 1rem;
+	align-content: center;
+	margin-top: 30px;
+}
+.bg-mantis {
+	background-image:	url("/img/backgrounds/sharp_blue_nebula.png");
+}
+.bg-crystal {
+	background-image:	url("/img/backgrounds/stars1.png");
+}
+.bg-engi {
+	background-image:	url("/img/backgrounds/arsenal_nebula_liquid_blue.png");
+}
+.bg-federation {
+	background-image: url("/img/backgrounds/bg_dullstars2.png");
+}
+.bg-rebel {
+	background-image: url("/img/backgrounds/dark_nebula.png");
+}
+.bg-lanius {
+	background-image: url("/img/backgrounds/z_bg_nebula5.png");
+}
+.bg-rock {
+	background-image: url("/img/backgrounds/blue_starfield_2.png");
+}
+.bg-auto {
+	background-image: url("/img/backgrounds/z_bg_nebula11.png");
+}
+.bg-zoltan {
+	background-image: url("/img/backgrounds/stars4.png");
+}
+.bg-slug {
+	background-image: url("/img/backgrounds/Tim_Barton_Victory_edited.png");
+}
+.bg-auto a {
+	background-image: url("/img/auto/homepage_bg.png");
+}
+.bg-crystal a {
+	background-image: url("/img/crystal/homepage_bg.png");
+}
+.bg-engi a {
+	background-image: url("/img/engi/homepage_bg.png");
+}
+.bg-federation a {
+	background-image: url("/img/federation/homepage_bg.png");
+}
+.bg-lanius a {
+	background-image: url("/img/lanius/homepage_bg.png");
+}
+.bg-mantis a {
+	background-image: url("/img/mantis/homepage_bg.png");
+}
+.bg-rebel a {
+	background-image: url("/img/rebel/homepage_bg.png");
+}
+.bg-rock a {
+	background-image: url("/img/rock/homepage_bg.png");
+}
+.bg-slug a {
+	background-image: url("/img/slug/homepage_bg.png");
+}
+.bg-zoltan a {
+	background-image: url("/img/zoltan/homepage_bg.png");
 }
 
 .no-pirate {
@@ -355,4 +457,15 @@ td, th {
 	z-index: 1;
 	background: transparent;
 	border-color: transparent;
+}
+
+.homepage-crumbs {
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+}
+.homepage-title {
+	text-align: center !important;
+	width: 100%;
+	margin-top: 0 !important;
 }
