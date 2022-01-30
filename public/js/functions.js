@@ -1,3 +1,11 @@
+const internals = document.querySelectorAll('.image_rooms')
+const externals = document.querySelectorAll('.image_hull')
+const slots = document.querySelectorAll('.image_slots')
+
+const roomToggle = document.getElementById('toggleRooms')
+const slotToggle = document.getElementById('toggleSlots')
+const testToggle = document.getElementById('toggleTest')
+
 function drawRooms() {
 	let rooms = document.querySelectorAll('.drop-target')
 	rooms.forEach((room) => {
@@ -9,27 +17,57 @@ function drawRooms() {
 
 function concealSystems() {
 	document.querySelectorAll('.with-block').forEach((block) => {
-		block.hidden = false;
+		block.hidden = false
 	})
 }
 
 function revealSystems() {
 	document.querySelectorAll('.with-block').forEach((block) => {
-		block.hidden = true;
+		block.hidden = true
 	})
 }
 
+function toggleSlots() {
+	slotsHidden() ? showSlots() : hideSlots()
+}
+
+function showSlots() {	
+	slotToggle.innerHTML = 'Hide weapon slots'
+	slots.forEach(function(ship) { ship.hidden = false })
+	
+	showRooms()
+	internals.forEach(function(ship) { ship.hidden = true })
+}
+
+function hideSlots() {
+	slotToggle.innerHTML = 'Show weapon slots'
+	slots.forEach(function(ship) { ship.hidden = true })
+
+	internals.forEach(function(ship) { ship.hidden = false })
+}
+
+function slotsHidden() {
+	return slotToggle.innerHTML == 'Show weapon slots'
+}
+function roomsHidden() {
+	return roomToggle.innerHTML == 'Show rooms'
+}
+
 function toggleRooms() { 
-	let rooms = document.querySelectorAll('.rooms')
-	rooms.forEach(function(ship) {
-		ship.hidden = !ship.hidden
-	})
-	let button = document.getElementById('toggleRooms')
-	if (button.innerHTML == 'Show rooms') {
-		button.innerHTML = 'Hide rooms'
-	} else {
-		button .innerHTML = 'Show rooms'
-	}
+	roomsHidden() ? showRooms() : hideRooms()
+}
+
+function showRooms() {
+	roomToggle.innerHTML = 'Hide rooms'
+	internals.forEach(function(ship) { ship.hidden = false })
+	externals.forEach(function(ship) { ship.hidden = true })
+}
+
+function hideRooms() {
+	hideSlots()
+	roomToggle.innerHTML = 'Show rooms'
+	internals.forEach(function(ship) { ship.hidden = true })
+	externals.forEach(function(ship) { ship.hidden = false })
 }
 
 function forceShowRooms() {
@@ -61,18 +99,19 @@ function togglePirate() {
 	}
 }
 
-function toggleTest() {
-	let button = document.getElementById('toggleTest')
-	if (button.innerHTML == 'Test yourself!') {
-		button.innerHTML = 'Stop testing'
+function toggleTest() {	
+	if (testToggle.innerHTML == 'Test yourself!') {
+		testToggle.innerHTML = 'Stop testing'
 		beginTest()
 	} else {
-		button.innerHTML = 'Test yourself!'
+		testToggle.innerHTML = 'Test yourself!'
 		endTest()
 	}
 }
 
 function beginTest() {
+	hideSlots()
+	slotToggle.disabled = true
 	forceShowRooms()
 	showDropTargets()
 	hideSystemsUI()
@@ -81,6 +120,7 @@ function beginTest() {
 }
 
 function endTest() {
+	slotToggle.disabled = false
 	showSystemsUI()
 	hideDraggableIcons()
 	revealSystems()
@@ -193,8 +233,9 @@ function drop_handler(event) {
 }
 
 (function () {
-	document.getElementById('toggleRooms').addEventListener('click', toggleRooms)
-	document.getElementById('toggleTest').addEventListener('click', toggleTest)
+	roomToggle.addEventListener('click', toggleRooms)
+	testToggle.addEventListener('click', toggleTest)
+	slotToggle.addEventListener('click', toggleSlots)
 	
 	let pirate = document.getElementById('togglePirate')
 	if (pirate) {

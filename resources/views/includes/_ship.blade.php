@@ -1,18 +1,25 @@
 <div class="not-flow ship-item" @if($ship->is_pirate) hidden @endif>
 	<h2 class="ship-name">{{ $ship->name }}</h2>
 	<div class="image-box">
-		<div class="rooms" hidden>
+		<div class="image_hull" hidden>
 			<img src="/img/{{ $ship->type }}/
 			{{ $ship->is_pirate ? '/pirate/' : '' }}
 			{{ $ship->class }}_1.png"
 			draggable="false"/>
 		</div>
-		<div class="rooms">
+		<div class="image_rooms">
 			<img src="/img/{{ $ship->type }}/
 			{{ $ship->is_pirate ? '/pirate/' : '' }}
 			{{ $ship->class }}_2.png"
 			draggable="false"/>
 		</div>
+		<div class="image_slots" hidden>
+			<img src="/img/{{ $ship->type }}/
+			{{ $ship->is_pirate ? '/pirate/' : '' }}
+			{{ $ship->class }}_slots.png"
+			draggable="false"/>
+		</div>
+
 
 		@if ($ship->hasRooms())
 			@foreach ($ship->rooms as $room)			

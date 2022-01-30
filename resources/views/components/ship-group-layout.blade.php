@@ -23,6 +23,7 @@
 			<button id="togglePirate">Show pirate layouts</button>
 		@endif
 
+		<button id="toggleSlots">Show weapon slots</button>
 		<button id="toggleTest">Test yourself!</button>
 	</div>
 
