@@ -1,0 +1,59 @@
+[
+	{ "name": "Auto-Scout",	   "crew_min": 0, "crew_max": 0, "hull": 6 },
+	{ "name": "Auto-Surveyor",	"crew_min": 0, "crew_max": 0, "hull": 6 },
+	{ "name": "Auto-Assault",	"crew_min": 0, "crew_max": 0, "hull": 8, "drones": 5 },
+	{ "name": "Auto-Hacker",   "crew_min": 0, "crew_max": 0, "hull": 8, "drones": 4 },
+
+	{ "name": "Crystal Scout",      "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Crystal Outrider",   "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Crystal Bomber",     "crew_min": 2, "crew_max": 5, "hull": 9, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Crystal Instigator", "crew_min": 2, "crew_max": 5, "hull": 9, "sector_min": 5, "sector_max": 7 },
+	
+	{ "name": "Engi Scout",    "crew_min": 2, "crew_max": 5, "hull": 7, "drones": 4, "missiles": 6, "sector_min": 2, "sector_max": 7 },
+	{ "name": "Engi Outrider", "crew_min": 2, "crew_max": 5, "hull": 7, "drones": 4, "missiles": 6, "sector_min": 2, "sector_max": 7 },
+	{ "name": "Engi Bomber",   "crew_min": 3, "crew_max": 6, "hull": 9, "drones": 4, "sector_min": 2, "sector_max": 7 },
+	{ "name": "Engi Hacker",   "crew_min": 3, "crew_max": 6, "hull": 9, "drones": 4, "sector_min": 2, "sector_max": 7 },
+
+	{ "name": "Federation Scout",    "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Federation Outrider", "crew_min": 2, "crew_max": 3, "hull": 7, "drones": 4, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Federation Bomber",   "crew_min": 2, "crew_max": 6, "hull": 9, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Federation Hacker",   "crew_min": 2, "crew_max": 6, "hull": 9, "drones": 4, "sector_min": 5, "sector_max": 7 },
+
+	{ "name": "Lanius Scout",  "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7 },
+	{ "name": "Lanius Bomber", "crew_min": 3, "crew_max": 5, "hull": 9, "sector_min": 4, "sector_max": 7 },
+
+	{ "name": "Mantis Scout",       "crew_min": 3, "crew_max": 5, "hull": 7, "sector_max": 6 },
+	{ "name": "Mantis Interceptor", "crew_min": 2, "crew_max": 4, "hull": 7, "missiles": 6, "sector_max": 6 },
+	{ "name": "Mantis Fighter",     "crew_min": 3, "crew_max": 5, "hull": 9, "sector_min": 2, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
+	{ "name": "Mantis Assault",     "crew_min": 2, "crew_max": 5, "hull": 9, "sector_min": 2, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
+	{ "name": "Mantis Bomber",      "crew_min": 4, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7, "sector_min_special": 2, "sector_max_special": 8, "special_events": ["DONOR_MANTIS_CHASE", "WRECKAGE_EVENT"] },
+	{ "name": "Mantis Aggressor",   "crew_min": 3, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
+
+	{ "name": "Rebel Fighter",       "crew_min": 3, "crew_max": 6, "hull": 10 },
+	{ "name": "Rebel Invader",       "crew_min": 3, "crew_max": 6, "hull": 10 },
+	{ "name": "Rebel Disruptor",     "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
+	{ "name": "Rebel Rigger",        "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
+	{ "name": "Rebel Elite Assault", "crew_min": 3, "crew_max": 8, "hull": 14, "special_events": ["FEDERATION_PLANET_SIGNAL"] },
+	{ "name": "Rebel Elite Fighter", "crew_min": 3, "crew_max": 8, "hull": 14, "special_events": ["FEDERATION_PLANET_SIGNAL"] },
+
+	{ "name": "Rock Scout",           "crew_min": 2, "crew_max": 5, "hull": 8, "missiles": 6, "sector_max": 6 },
+	{ "name": "Rock Investigator",    "crew_min": 2, "crew_max": 4, "hull": 8, "missiles": 6, "sector_max": 6 },
+	{ "name": "Rock Fighter",         "crew_min": 3, "crew_max": 5, "hull": 10, "sector_min": 3, "sector_max": 7 },
+	{ "name": "Rock Interceptor",     "crew_min": 2, "crew_max": 5, "hull": 10, "sector_min": 3, "sector_max": 7 },
+	{ "name": "Rock Assault",         "crew_min": 3, "crew_max": 6, "hull": 12, "sector_min": 6, "sector_max": 7 },
+	{ "name": "Rock Aggressor",       "crew_min": 2, "crew_max": 6, "hull": 12, "sector_min": 6, "sector_max": 7 },
+	{ "name": "Rock Assault (Elite)", "crew_min": 4, "crew_max": 5, "hull": 12, "sector_min": 6, "sector_max": 7, "sector_min_special": 5, "special_events": ["ROCK_UNLOCK"] },
+	
+	{ "name": "Slug Interceptor",    "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 5 },
+	{ "name": "Slug Scout",          "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 6, "missiles": 6 },
+	{ "name": "Slug Light-Cruiser",  "crew_min": 3, "crew_max": 6, "hull": 10, "sector_min": 4, "sector_max": 7 },
+	{ "name": "Slug Light-Surveyor", "crew_min": 3, "crew_max": 7, "hull": 10, "sector_min": 4, "sector_max": 7 },
+	{ "name": "Slug Assault",        "crew_min": 4, "crew_max": 7, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
+	{ "name": "Slug Instigator",     "crew_min": 4, "crew_max": 8, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
+
+	{ "name": "Zoltan Fighter",    "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
+	{ "name": "Zoltan Instigator", "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
+	{ "name": "Zoltan Bomber",     "crew_min": 3, "crew_max": 6, "hull": 7, "sector_min": 4, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
+	{ "name": "Zoltan Hacker",     "crew_min": 3, "crew_max": 6, "hull": 7, "sector_min": 4, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] }
+	
+]
