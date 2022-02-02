@@ -56,4 +56,18 @@ class LevelCalculator
 			[$this->systemMin(8), $this->systemMax(8)],
 		];
 	}
+
+	public function crew()
+	{
+		return [
+			$this->interpolated(1),
+			$this->interpolated(2),
+			$this->interpolated(3),
+			$this->interpolated(4),
+			$this->interpolated(5),
+			$this->interpolated(6),
+			$this->interpolated(7),
+			$this->interpolated(8),
+		];
+	}
 }

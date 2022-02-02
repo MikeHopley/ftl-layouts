@@ -19,6 +19,11 @@
 	{ "name": "Federation Bomber",   "crew_min": 2, "crew_max": 6, "hull": 9, "sector_min": 5, "sector_max": 7 },
 	{ "name": "Federation Hacker",   "crew_min": 2, "crew_max": 6, "hull": 9, "drones": 4, "sector_min": 5, "sector_max": 7 },
 
+	{ "name": "Pirate Federation Scout",    "crew_min": 2, "crew_max": 3, "hull": 7, "sector_max": 7 },
+	{ "name": "Pirate Federation Outrider", "crew_min": 2, "crew_max": 3, "hull": 7, "drones": 4, "sector_max": 7 },
+	{ "name": "Pirate Federation Bomber",   "crew_min": 2, "crew_max": 6, "hull": 9, "sector_min": 2 },
+	{ "name": "Pirate Federation Hacker",   "crew_min": 2, "crew_max": 6, "hull": 9, "drones": 4, "sector_min": 2 },
+
 	{ "name": "Lanius Scout",  "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7 },
 	{ "name": "Lanius Bomber", "crew_min": 3, "crew_max": 5, "hull": 9, "sector_min": 4, "sector_max": 7 },
 
@@ -29,12 +34,24 @@
 	{ "name": "Mantis Bomber",      "crew_min": 4, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7, "sector_min_special": 2, "sector_max_special": 8, "special_events": ["DONOR_MANTIS_CHASE", "WRECKAGE_EVENT"] },
 	{ "name": "Mantis Aggressor",   "crew_min": 3, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
 
+	{ "name": "Pirate Mantis Scout",       "crew_min": 3, "crew_max": 5, "hull": 7, "sector_max": 6 },
+	{ "name": "Pirate Mantis Interceptor", "crew_min": 2, "crew_max": 4, "hull": 7, "missiles": 6, "sector_max": 6 },
+	{ "name": "Pirate Mantis Fighter",     "crew_min": 3, "crew_max": 5, "hull": 9, "sector_min": 2 },
+	{ "name": "Pirate Mantis Assault",     "crew_min": 2, "crew_max": 5, "hull": 9, "sector_min": 2 },
+	{ "name": "Pirate Mantis Bomber",      "crew_min": 4, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5 },
+	{ "name": "Pirate Mantis Aggressor",   "crew_min": 3, "crew_max": 6, "hull": 11, "missiles": 14, "sector_min": 5 },
+
 	{ "name": "Rebel Fighter",       "crew_min": 3, "crew_max": 6, "hull": 10 },
 	{ "name": "Rebel Invader",       "crew_min": 3, "crew_max": 6, "hull": 10 },
 	{ "name": "Rebel Disruptor",     "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
 	{ "name": "Rebel Rigger",        "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
 	{ "name": "Rebel Elite Assault", "crew_min": 3, "crew_max": 8, "hull": 14, "special_events": ["FEDERATION_PLANET_SIGNAL"] },
 	{ "name": "Rebel Elite Fighter", "crew_min": 3, "crew_max": 8, "hull": 14, "special_events": ["FEDERATION_PLANET_SIGNAL"] },
+
+	{ "name": "Pirate Rebel Fighter",       "crew_min": 3, "crew_max": 6, "hull": 10 },
+	{ "name": "Pirate Rebel Invader",       "crew_min": 3, "crew_max": 6, "hull": 10 },
+	{ "name": "Pirate Rebel Disruptor",     "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
+	{ "name": "Pirate Rebel Rigger",        "crew_min": 3, "crew_max": 5, "hull": 9, "drones": 4 },
 
 	{ "name": "Rock Scout",           "crew_min": 2, "crew_max": 5, "hull": 8, "missiles": 6, "sector_max": 6 },
 	{ "name": "Rock Investigator",    "crew_min": 2, "crew_max": 4, "hull": 8, "missiles": 6, "sector_max": 6 },
@@ -43,6 +60,11 @@
 	{ "name": "Rock Assault",         "crew_min": 3, "crew_max": 6, "hull": 12, "sector_min": 6, "sector_max": 7 },
 	{ "name": "Rock Aggressor",       "crew_min": 2, "crew_max": 6, "hull": 12, "sector_min": 6, "sector_max": 7 },
 	{ "name": "Rock Assault (Elite)", "crew_min": 4, "crew_max": 5, "hull": 12, "sector_min": 6, "sector_max": 7, "sector_min_special": 5, "special_events": ["ROCK_UNLOCK"] },
+
+	{ "name": "Pirate Rock Scout",           "crew_min": 2, "crew_max": 5, "hull": 8, "missiles": 6, "sector_max": 6 },
+	{ "name": "Pirate Rock Investigator",    "crew_min": 2, "crew_max": 4, "hull": 8, "missiles": 6, "sector_max": 6 },
+	{ "name": "Pirate Rock Fighter",         "crew_min": 3, "crew_max": 5, "hull": 10, "sector_min": 3 },
+	{ "name": "Pirate Rock Interceptor",     "crew_min": 2, "crew_max": 5, "hull": 10, "sector_min": 3 },
 	
 	{ "name": "Slug Interceptor",    "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 5 },
 	{ "name": "Slug Scout",          "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 6, "missiles": 6 },
@@ -51,9 +73,21 @@
 	{ "name": "Slug Assault",        "crew_min": 4, "crew_max": 7, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
 	{ "name": "Slug Instigator",     "crew_min": 4, "crew_max": 8, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
 
-	{ "name": "Zoltan Fighter",    "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
-	{ "name": "Zoltan Instigator", "crew_min": 2, "crew_max": 3, "hull": 7, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
+	{ "name": "Pirate Slug Interceptor",    "crew_min": 2, "crew_max": 3, "hull": 9, "sector_max": 5 },
+	{ "name": "Pirate Slug Scout",          "crew_min": 2, "crew_max": 3, "hull": 9, "sector_max": 6, "missiles": 6 },
+	{ "name": "Pirate Slug Light-Cruiser",  "crew_min": 3, "crew_max": 6, "hull": 10, "sector_min": 2 },
+	{ "name": "Pirate Slug Light-Surveyor", "crew_min": 3, "crew_max": 7, "hull": 10, "sector_min": 2 },
+	{ "name": "Pirate Slug Assault",        "crew_min": 4, "crew_max": 7, "hull": 11, "missiles": 14, "sector_min": 5 },
+	{ "name": "Pirate Slug Instigator",     "crew_min": 4, "crew_max": 8, "hull": 11, "missiles": 14, "sector_min": 5 },
+
+	{ "name": "Zoltan Fighter",    "crew_min": 2, "crew_max": 3, "hull": 7, "drones": 2, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
+	{ "name": "Zoltan Instigator", "crew_min": 2, "crew_max": 3, "hull": 7, "drones": 5, "sector_min": 2, "sector_max": 7, "sector_min_special": 1, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT", "REFUGEE_DISTRESS"]},
 	{ "name": "Zoltan Bomber",     "crew_min": 3, "crew_max": 6, "hull": 7, "sector_min": 4, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
-	{ "name": "Zoltan Hacker",     "crew_min": 3, "crew_max": 6, "hull": 7, "sector_min": 4, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] }
+	{ "name": "Zoltan Hacker",     "crew_min": 3, "crew_max": 6, "hull": 7, "sector_min": 4, "sector_max": 7, "sector_max_special": 8, "special_events": ["WRECKAGE_EVENT"] },
+
+	{ "name": "Pirate Zoltan Fighter",    "crew_min": 2, "crew_max": 3, "hull": 7 },
+	{ "name": "Pirate Zoltan Instigator", "crew_min": 2, "crew_max": 3, "hull": 7 },
+	{ "name": "Pirate Zoltan Bomber",     "crew_min": 3, "crew_max": 6, "hull": 7, "drones": 2, "sector_min": 4 },
+	{ "name": "Pirate Zoltan Hacker",     "crew_min": 3, "crew_max": 6, "hull": 7, "drones": 5, "sector_min": 4 }
 	
 ]

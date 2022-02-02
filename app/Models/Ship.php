@@ -2,13 +2,10 @@
 namespace App\Models;
 
 use Str;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Ship extends Model
 {
-	use HasFactory;
-
 	protected $casts = [
 		'pirated' => 'boolean',
 		'is_pirate' => 'boolean',
@@ -22,6 +19,11 @@ class Ship extends Model
 	public function rooms()
 	{
 		return $this->hasMany(Room::class);
+	}
+
+	public function crew()
+	{
+		return $this->hasOne(Crew::class);
 	}
 
 	public function hasRooms()
