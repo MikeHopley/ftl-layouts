@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateShipsTable extends Migration
 {
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
 	public function up()
 	{
 		Schema::create('ships', function (Blueprint $table) {
@@ -21,18 +16,12 @@ class CreateShipsTable extends Migration
 			$table->string('class');
 			$table->boolean('pirated')->default(true);
 			$table->boolean('is_pirate')->default(false);
+			$table->tinyInteger('sector_min')->default(1);
+			$table->tinyInteger('sector_max')->default(8);
+			$table->tinyInteger('sector_min_special')->default(1);
+			$table->tinyInteger('sector_max_special')->default(8);
 
 			$table->timestamps();
 		});
-	}
-
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		Schema::dropIfExists('ships');
 	}
 }

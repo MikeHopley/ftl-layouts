@@ -52,6 +52,8 @@
 		@foreach ($ship->systems as $key => $system)
 			@include('includes._system-levels')
 			@include('includes._system-draggable')
-		@endforeach					
+		@endforeach
+
+		@include('includes._extras')
 	</div>
 </div>

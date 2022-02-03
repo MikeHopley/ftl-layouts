@@ -26,6 +26,11 @@ class Ship extends Model
 		return $this->hasOne(Crew::class);
 	}
 
+	public function resources()
+	{
+		return $this->hasOne(Resources::class);
+	}
+
 	public function hasRooms()
 	{
 		return $this->rooms->count() > 0;

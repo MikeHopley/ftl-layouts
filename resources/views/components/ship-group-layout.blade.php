@@ -24,6 +24,7 @@
 		@endif
 
 		<button id="toggleSlots">Show weapon slots</button>
+		<button id="toggleCrew">Show crew &amp; hull</button>
 		<button id="toggleTest">Test yourself!</button>
 	</div>
 

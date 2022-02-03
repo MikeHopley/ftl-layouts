@@ -151,7 +151,7 @@ function hideSystems(system) {
 }
 
 function hideSystemsUI() {
-	let systems = document.querySelectorAll('.system-levels')
+	let systems = document.querySelectorAll('.js_system-levels')
 	systems.forEach((system) => {
 		system.hidden = true
 	})

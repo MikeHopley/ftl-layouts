@@ -252,7 +252,7 @@ td, th {
 	position: relative;
 }
 
-.system-levels {
+.ship-card {
 	--border-color: rgb(32, 68, 189);
 	--border-width: 12px;
 	width: 372px;
@@ -265,14 +265,14 @@ td, th {
 	padding: 1rem;
 }
 
-.close-system {
+.close-system, .close-extras {
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
 	padding: 1rem;
 	background-color: var(--border-color);
-	padding-left: calc(0.5rem + var(--border-width));
-	padding-top: calc(0.25rem + var(--border-width));
+	padding-left: calc(0.3rem + var(--border-width));
+	padding-top: var(--border-width);
 	padding-right: 0.5rem;
 	padding-bottom: 0.25rem;
 	font-weight: bold;
@@ -280,24 +280,29 @@ td, th {
 	cursor: pointer;
 }
 
-.system-title {
+.card-title {
 	font-size: 140%;
 	font-weight: bold;
 }
 
-.system-range {
+.card-title-offset {
 	float: right;
 }
 
-.system-levels table {
+.ship-card table {
 	margin-top: 1rem;
+	width: 270px;
 }
 
-.system-levels td {
+.ship-card table.system-table {
+	width: 250px;
+}
+
+.ship-card td {
 	text-align: center;
 }
 
-.system-levels tr:last-child td {
+.ship-card tr:last-child td {
 	border-bottom: none;
 }
 

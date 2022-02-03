@@ -1,10 +1,10 @@
-<div class="system-levels" 
+<div class="ship-card js_system-levels" 
 	id="system_{{ $system->id }}" 
 	data-systemship="{{ $ship->id }}"
 	hidden
 >
-	<p class="system-title">{{ ucfirst($system->name) }}
-		<span class="system-range">{{ $system->s1_min }} &mdash; {{ $system->s8_max }}
+	<p class="card-title">{{ ucfirst($system->name) }}
+		<span class="card-title-offset">{{ $system->s1_min }} &mdash; {{ $system->s8_max }}
 	</p>
 
 	@if($system->optional)

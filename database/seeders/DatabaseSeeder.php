@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
 			SystemSeeder::class,
 			RoomSeeder::class,
 			CrewSeeder::class,
+			ResourcesSeeder::class,
 		]);
 
 		DB::commit();
