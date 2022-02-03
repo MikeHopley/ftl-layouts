@@ -464,8 +464,11 @@ td, th {
 	width: 100%;
 	max-width: 100%;
 }
-.homepage-title {
+.homepage-title, .homepage-sub {
 	text-align: center !important;
 	width: 100%;
 	margin-top: 0 !important;
+}
+.homepage-sub {
+	color: #666;
 }
