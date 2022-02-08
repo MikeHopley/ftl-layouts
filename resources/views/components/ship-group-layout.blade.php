@@ -24,7 +24,16 @@
 		@endif
 
 		<button id="toggleSlots">Show weapon slots</button>
-		<button id="toggleCrew">Show crew &amp; hull</button>
+
+		<div class="cluster">
+			@if ($title == 'Automated')
+				<button disabled>No crew</button>
+			@else
+				<button id="toggleCrew">Show crew</button>
+			@endif
+			<button id="toggleHull">Show hull</button>
+		</div>
+		
 		<button id="toggleTest">Test yourself!</button>
 	</div>
 

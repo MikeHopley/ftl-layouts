@@ -3,5 +3,9 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"editor.parameterHints.enabled": false,
+		"editor.hover.enabled": false
+	}
 }

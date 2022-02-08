@@ -4,4 +4,6 @@
 	:pirated="$pirated ?? true"
 >
 
+<p>Engi ships have Med-bot Dispersal.</p>
+
 </x-ship-group-layout>

@@ -43,4 +43,34 @@ class Ship extends Model
 		}
 		return $this->type;
 	}
+
+	public function hasCrew()
+	{
+		return $this->crewMin() > 0;
+	}
+
+	public function fixedCrew()
+	{
+		return $this->crewMin() == $this->crewMax();
+	}
+
+	public function crewMin()
+	{
+		return $this->crew->{'s'.$this->sector_min_special};
+	}
+
+	public function crewMax()
+	{
+		return $this->crew->{'s'.$this->sector_max_special};
+	}
+
+	public function hullMin()
+	{
+		return $this->resources->hull + $this->sector_min_special - 1;
+	}
+
+	public function hullMax()
+	{
+		return $this->resources->hull + $this->sector_max_special - 1;
+	}
 }

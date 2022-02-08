@@ -4,14 +4,25 @@
 	hidden
 >
 	<p class="card-title">{{ ucfirst($system->name) }}
-		<span class="card-title-offset">{{ $system->s1_min }} &mdash; {{ $system->s8_max }}
+		<span class="card-title-offset">
+			@if ($system->isFixed())
+				Level {{ $system->min() }}
+			@else
+				{{ $system->min() }} &mdash; {{ $system->max() }}
+			@endif
 	</p>
 
 	@if($system->optional)
 		<p>Optional system</p>
 	@endif
 
-	@include('includes._system-levels-table')
+	@if ($system->isFixed())
+		<p>Same level in all sectors</p>
+	@elseif ($system->isFixedRange())
+		<p>Same levels in all sectors</p>
+	@else
+		@include('includes._system-levels-table')
+	@endif
 
 	<div class="close-system" data-system="{{ $system->id }}">Close</div>
 </div>

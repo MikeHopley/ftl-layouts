@@ -1,9 +1,10 @@
 <table>
 	<tr>
 		<th>Sector</th>
-		<th>System range</th>
+		<th>Crew</th>
 	</tr>
-	@foreach($system->compacted() as $row)
+	@foreach($ship->crew->compacted() as $row)
 		@include('includes._compacted-row')
 	@endforeach
+	
 </table>
