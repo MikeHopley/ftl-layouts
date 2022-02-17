@@ -3,6 +3,7 @@ const externals = document.querySelectorAll('.image_hull')
 const slots = document.querySelectorAll('.image_slots')
 const crew = document.querySelectorAll('.js_crew')
 const hull = document.querySelectorAll('.js_hull')
+const extras = document.querySelectorAll('.js_extras')
 const systems = document.querySelectorAll('.js_system-levels')
 const tray = document.querySelectorAll('.invisible-icon')
 const draggable = document.querySelectorAll('.draggable-system')
@@ -11,6 +12,7 @@ const roomToggle = document.getElementById('toggleRooms')
 const slotToggle = document.getElementById('toggleSlots')
 const testToggle = document.getElementById('toggleTest')
 const crewToggle = document.getElementById('toggleCrew')
+const extrasToggle = document.getElementById('toggleExtras')
 const hullToggle = document.getElementById('toggleHull')
 
 const testRooms = document.querySelectorAll('.js_system-test')
@@ -40,27 +42,42 @@ function revealSystems() {
 function toggleCrew() {
 	crewHidden() ? showCrew() : hideCrew();
 }
+function toggleExtras() {
+	extrasHidden() ? showExtras() : hideExtras();
+}
 function toggleHull() {
 	hullHidden() ? showHull() : hideHull();
 }
 
 function showCrew() {
 	hideHull()
+	hideExtras()
 	hideSystemLinks()
 	roomToggle.disabled = true
 	slotToggle.disabled = true
 	hideAllSystems()
-	crew.forEach(function(card) { card.hidden = false })
+	crew.forEach((card) => { card.hidden = false })
 	if (crewToggle) {
 		crewToggle.innerHTML = 'Hide crew'
 	}
 }
-function showHull() {
+function showExtras() {
+	hideHull()
 	hideSystemLinks()
 	roomToggle.disabled = true
 	slotToggle.disabled = true
 	hideAllSystems()
-	hull.forEach(function(card) { card.hidden = false })
+	extras.forEach((card) => { card.hidden = false })
+	extrasToggle.innerHTML = 'Hide extra info'
+}
+function showHull() {
+	hideCrew()
+	hideExtras()
+	hideSystemLinks()
+	roomToggle.disabled = true
+	slotToggle.disabled = true
+	hideAllSystems()
+	hull.forEach((card) => { card.hidden = false })
 	hullToggle.innerHTML = 'Hide hull'
 }
 
@@ -68,10 +85,17 @@ function hideCrew() {
 	showSystemLinks()
 	roomToggle.disabled = false
 	slotToggle.disabled = false
-	crew.forEach(function(card) { card.hidden = true })
+	crew.forEach((card) => { card.hidden = true })
 	if (crewToggle) {
 		crewToggle.innerHTML = 'Show crew'
 	}
+}
+function hideExtras() {
+	showSystemLinks()
+	roomToggle.disabled = false
+	slotToggle.disabled = false
+	extras.forEach((card) => { card.hidden = true })
+	extrasToggle.innerHTML = 'Show extra info'
 }
 function hideHull() {
 	showSystemLinks()
@@ -82,7 +106,13 @@ function hideHull() {
 }
 
 function crewHidden() {
+	if (!crewToggle) {
+		return true
+	}
 	return crewToggle.innerHTML == 'Show crew'
+}
+function extrasHidden() {
+	return extrasToggle.innerHTML == 'Show extra info'
 }
 function hullHidden() {
 	return hullToggle.innerHTML == 'Show hull'
@@ -170,8 +200,10 @@ function beginTest() {
 	hideSlots()
 	hideCrew()
 	hideHull()
+	hideExtras()
 	slotToggle.disabled = true
-	hullToggle.disabled = true;
+	hullToggle.disabled = true
+	extrasToggle.disabled = true
 	if (crewToggle) {
 		crewToggle.disabled = true
 	}
@@ -186,6 +218,7 @@ function beginTest() {
 function endTest() {
 	slotToggle.disabled = false
 	hullToggle.disabled = false
+	extrasToggle.disabled = false
 	if (crewToggle) {
 		crewToggle.disabled = false
 	}
@@ -207,8 +240,15 @@ function toggleSystem() {
 }
 
 function showSystem(system) {
-	hideCrew()
-	hideHull()
+	if (!crewHidden()) {
+		hideCrew()
+	}
+	if (!hullHidden()) {
+		hideHull()
+	}
+	if (!extrasHidden()) {
+		hideExtras()
+	}
 	hideShipSystemLinks(system.dataset.systemship)
 	hideSystems(system.dataset.systemship)
 	system.hidden = false
@@ -224,7 +264,7 @@ function hideAllSystems() {
 }
 
 function hideSystemLinks() {
-	systemLinks.forEach((system) => { system.hidden = true})
+	systemLinks.forEach((link) => { link.hidden = true})
 }
 
 function hideShipSystemLinks(ship) {
@@ -274,13 +314,20 @@ function dragstart_handler(event) {
 	event.dataTransfer.setData('dragged-icon', this.id);
 }
 
-function dragend_handler(event) {
-	// this.hidden = true
+function dragend_handler(event) {	
+	var target = document.getElementById('room_block_' + this.dataset.room)
+
+	if (target.hidden == true) {		
+		this.hidden = true
+	}
 }
 
-function dragenter_handler() {
+function dragenter_handler(event) {
 	let room = this.dataset.room
 	document.getElementById('room_' + room).classList.remove('transparent')
+
+	event.preventDefault()
+	return false
 }
 
 function dragleave_handler() {
@@ -291,9 +338,11 @@ function dragleave_handler() {
 // Not using this, but must be set to allow dropping
 function dragover_handler(event) {
 	event.preventDefault()
+	return false
 }
 
 function drop_handler(event) {
+	event.stopPropagation()
 	event.preventDefault()
 	
 	var dragged = event.dataTransfer.getData('dragged-room');
@@ -310,6 +359,8 @@ function drop_handler(event) {
 		room.classList.add('invalid')
 		document.getElementById(icon).draggable = false
 	}
+
+	return false
 }
 
 (function () {
@@ -317,6 +368,7 @@ function drop_handler(event) {
 	testToggle.addEventListener('click', toggleTest)
 	slotToggle.addEventListener('click', toggleSlots)
 	hullToggle.addEventListener('click', toggleHull)
+	extrasToggle.addEventListener('click', toggleExtras)
 	
 	if (crewToggle) {
 		crewToggle.addEventListener('click', toggleCrew)

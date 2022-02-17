@@ -270,6 +270,14 @@ td, th {
 	padding: 1rem;
 }
 
+.ship-card a, .ship-card a:link, .ship-card a:visited {
+	color:white;
+}
+
+.ship-card p.regular + p.regular {
+	margin-top: 1rem;
+}
+
 .close-system, .close-extras {
 	position: absolute;
 	bottom: 0px;

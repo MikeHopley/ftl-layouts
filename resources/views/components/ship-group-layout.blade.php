@@ -34,6 +34,8 @@
 			<button id="toggleHull">Show hull</button>
 		</div>
 		
+		<button id="toggleExtras">Show extra info</button>
+
 		<button id="toggleTest">Test yourself!</button>
 	</div>
 

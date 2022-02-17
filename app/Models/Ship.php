@@ -73,4 +73,33 @@ class Ship extends Model
 	{
 		return $this->resources->hull + $this->sector_max_special - 1;
 	}
+
+	public function hasSystem($systemName)
+	{
+		return $this->systems()->whereName($systemName)->exists();
+	}
+
+	public function increasesDrones()
+	{
+		return $this->hasSystem('drones')
+			&& $this->resources->drones < $this->maxDrones();
+	}
+
+	public function maxDrones()
+	{
+		if (!$this->resources->max_drones) {
+			return $this->resources->drones;
+		}
+		return $this->resources->max_drones * 2;
+	}
+
+	public function appearsEarly()
+	{
+		return $this->sector_min_special < $this->sector_min;
+	}
+
+	public function appearsLate()
+	{
+		return $this->sector_max_special > $this->sector_max;
+	}
 }

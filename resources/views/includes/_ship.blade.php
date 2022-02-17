@@ -69,5 +69,6 @@
 
 		@include('includes._crew')
 		@include('includes._hull')
+		@include('includes._extras')
 	</div>
 </div>

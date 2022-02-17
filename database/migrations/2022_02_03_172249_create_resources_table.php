@@ -16,6 +16,7 @@ class CreateResourcesTable extends Migration
 			$table->tinyInteger('hull');
 			$table->tinyInteger('missiles')->default(10);
 			$table->tinyInteger('drones')->nullable();
+			$table->tinyInteger('max_drones')->nullable();
 
 			$table->timestamps();
 		});

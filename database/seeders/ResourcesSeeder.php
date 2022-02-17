@@ -28,6 +28,7 @@ class ResourcesSeeder extends Seeder
 			'hull' => $data->hull,
 			'missiles' => $data->missiles ?? 10,
 			'drones' => $data->drones ?? null,
+			'max_drones' => $data->max_drones ?? null,
 		]);
 
 		$ship->update([
