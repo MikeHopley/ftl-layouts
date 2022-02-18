@@ -15,7 +15,12 @@
 		<p class="breadcrumb homepage-crumbs"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > Enemy ships</p>
 						
 		<h1 class="homepage-title">{{ $title }}</h1>
-		<h2 class="homepage-sub">Info is correct for Hard difficulty only</h2>						
+		<h2 class="homepage-sub">Info is correct for Hard difficulty only</h2>
+		
+		<div class="subtitle-nav">
+			<a href="/" class="nav-button">Search the ships</a>
+			<a href="/" class="nav-button">Explanatory video</a>
+		</div>
 
 			<div class="flow">
 				{{ $slot }}

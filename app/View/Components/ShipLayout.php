@@ -3,18 +3,17 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class ShipGroupLayout extends Component
+class ShipLayout extends Component
 {
 	public function __construct(
 		public $title,
-		public $pirated,
-		public $ships,
+		public $ship,
 		public $groupLayout
 	) {
 	}
 
 	public function render()
 	{
-		return view('components.ship-group-layout');
+		return view('components.ship-layout');
 	}
 }

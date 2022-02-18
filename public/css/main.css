@@ -67,6 +67,26 @@ h3 {
 	width: 100%;
 	justify-content: center;
 }
+
+.subtitle-nav {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 25rem;
+	margin: 0.5rem auto 0 auto !important;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.nav-button {
+	margin: 0 !important;
+	color: white;
+	background: #0051ac;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
 .guide {
 	margin: 0 0 2em 0;
 }
@@ -304,7 +324,7 @@ td, th {
 
 .ship-card table {
 	margin-top: 1rem;
-	width: 250px;
+	width: 300px;
 }
 
 .ship-card td {

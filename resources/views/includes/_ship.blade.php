@@ -1,4 +1,4 @@
-<div class="not-flow ship-item" @if($ship->is_pirate) hidden @endif>
+<div class="not-flow ship-item" @if($ship->is_pirate && $groupLayout == true) hidden @endif>
 	<h2 class="ship-name">{{ $ship->name }}</h2>
 	<div class="image-box">
 		<div class="image_hull" hidden>

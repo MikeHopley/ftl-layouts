@@ -12,6 +12,7 @@ class CreateShipsTable extends Migration
 			$table->id();
 
 			$table->string('name');
+			$table->string('slug');
 			$table->string('type');
 			$table->string('class');
 			$table->boolean('pirated')->default(true);

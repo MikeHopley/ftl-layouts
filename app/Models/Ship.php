@@ -11,6 +11,11 @@ class Ship extends Model
 		'is_pirate' => 'boolean',
 	];
 
+	public function getRouteKeyName()
+	{
+		return 'slug';
+	}
+
 	public function systems()
 	{
 		return $this->hasMany(System::class);

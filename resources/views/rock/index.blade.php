@@ -2,6 +2,7 @@
 	:title="$title"
 	:ships="$ships"
 	:pirated="$pirated ?? true"
+	:groupLayout="true"
 >
 
 <p>Rock sectors have events that force a pirate Rock ship.</p>

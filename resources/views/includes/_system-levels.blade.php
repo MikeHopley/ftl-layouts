@@ -13,7 +13,8 @@
 	</p>
 
 	@if($system->optional)
-		<p>Optional system</p>
+		<p>Optional</p>
+		<p>30% in sector 1, +10% each sector</p>
 	@endif
 
 	@if ($system->isFixed())

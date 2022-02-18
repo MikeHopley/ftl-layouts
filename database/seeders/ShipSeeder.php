@@ -13,14 +13,17 @@ class ShipSeeder extends Seeder
 		foreach ($ships as $ship) {
 			Ship::create([
 				'name' => $ship->name,
+				'slug' => $this->slug($ship->name),
 				'type' => $ship->type,
 				'class' => $ship->class,
 				'pirated' => $ship->pirated ?? true,
 			]);
 
 			if (!isset($ship->pirated)) {
+				$name = 'Pirate ' . $ship->name;
 				Ship::create([
-					'name' => 'Pirate ' . $ship->name,
+					'name' => $name,
+					'slug' => $this->slug($name),
 					'type' => $ship->type,
 					'class' => $ship->class,
 					'pirated' => false,
@@ -28,6 +31,12 @@ class ShipSeeder extends Seeder
 				]);
 			}
 		}
+	}
+
+	private function slug($name)
+	{
+		$name = strtolower($name);
+		return str_replace(' ', '-', $name);
 	}
 
 	private function getData()

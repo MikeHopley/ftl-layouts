@@ -2,6 +2,7 @@
 	:title="$title"
 	:ships="$ships"
 	:pirated="$pirated ?? true"
+	:groupLayout="true"
 >
 
 <p>Automated ships never surrender and do not run from fights, unless they are running at the start. They take 40 seconds to escape and double the Fleet pursuit.</p>
