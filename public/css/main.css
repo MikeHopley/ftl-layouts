@@ -34,6 +34,15 @@ img {
 	margin: 0 0 0 var(--sidebar-width);
 	padding: 2rem;
 }
+.explosives {
+	float: right;
+}
+
+.drones-list {
+	margin-top: 1.5rem;
+}
+
+
 h1, h2, h3 {
 	color: #0051ac;
 	font-weight: bold;
@@ -158,6 +167,31 @@ td.center, th.center {
 td, th {
 	padding:  0.25rem 0.5rem;
 	border-bottom:  1px solid grey;
+}
+
+.explosives-table td, .explosives-table th {
+	border: none;
+	padding: 0.5rem 1rem;
+}
+.explosives-table th {
+	padding-left: 0.5rem;
+	padding-bottom: 0;
+	text-align: left;
+}
+.explosives-table td {
+	padding: 0 0.5rem;
+}
+.explosives-table tr:nth-child(even) td {
+	padding-top: 0.5rem;
+}
+.drones-table tr:nth-child(even) td {
+	padding-top: 0;
+}
+.drones-table tr:nth-child(odd) td {
+	padding-top: 0.75rem;
+}
+.explosives h2 {
+	text-align: center;
 }
 
 .home-nav {

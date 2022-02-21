@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="{{ $title }} ship layouts in FTL"/>
-	<title>{{ $title }} ships | Learn your layouts</title>
+	<title>{{ $title }} ships | Enemies in FTL</title>
 	<link rel="stylesheet" href="/css/main.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 </head>
@@ -40,6 +40,21 @@
 	</div>
 
 	<div class="content-wrapper">
+		<div class="explosives">
+			<h2>Explosives</h2>
+
+			<table class="explosives-table">
+				{{ $explosives }}
+			</table>
+
+			@if($hasDrones)
+				<h2 class="drones-list">Drones</h2>
+				
+				<table class="explosives-table drones-table">
+					{{ $drones }}
+				</table>
+			@endif
+		</div>
 
 		<p class="guide"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > 
 		<a href="/">Enemy ships</a> > {{ $title }}</p>

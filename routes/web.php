@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ShipController;
 use App\Http\Controllers\ShipGroupController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,6 @@ Route::get('/rock', [ShipGroupController::class, 'rock']);
 Route::get('/slug', [ShipGroupController::class, 'slug']);
 Route::get('/zoltan', [ShipGroupController::class, 'zoltan']);
 
-Route::get('/search', [SearchController::class]);
+Route::get('/search', [SearchController::class, 'show']);
 
 Route::get('/{ship}', [ShipController::class, 'show']);

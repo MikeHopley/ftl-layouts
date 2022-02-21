@@ -18,7 +18,7 @@
 		<h2 class="homepage-sub">Info is correct for Hard difficulty only</h2>
 		
 		<div class="subtitle-nav">
-			<a href="/" class="nav-button">Search the ships</a>
+			<a href="/search" class="nav-button">Search the ships</a>
 			<a href="/" class="nav-button">Explanatory video</a>
 		</div>
 

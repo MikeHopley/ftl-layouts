@@ -9,7 +9,8 @@ class ShipGroupLayout extends Component
 		public $title,
 		public $pirated,
 		public $ships,
-		public $groupLayout
+		public $groupLayout,
+		public $hasDrones = false
 	) {
 	}
 

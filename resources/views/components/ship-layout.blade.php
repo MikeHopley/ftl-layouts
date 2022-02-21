@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="{{ $title }} ship layouts in FTL"/>
-	<title>{{ $title }} ships | Learn your layouts</title>
+	<title>{{ $title }} ships | Enemies in FTL</title>
 	<link rel="stylesheet" href="/css/main.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 </head>
