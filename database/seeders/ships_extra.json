@@ -66,10 +66,10 @@
 	{ "name": "Pirate Rock Fighter",         "crew_min": 3, "crew_max": 5, "hull": 10, "sector_min": 3 },
 	{ "name": "Pirate Rock Interceptor",     "crew_min": 2, "crew_max": 5, "hull": 10, "sector_min": 3 },
 	
-	{ "name": "Slug Interceptor",    "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 5 },
-	{ "name": "Slug Scout",          "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 6, "missiles": 6 },
-	{ "name": "Slug Light-Cruiser",  "crew_min": 3, "crew_max": 6, "hull": 10, "sector_min": 4, "sector_max": 7 },
-	{ "name": "Slug Light-Surveyor", "crew_min": 3, "crew_max": 7, "hull": 10, "sector_min": 4, "sector_max": 7 },
+	{ "name": "Slug Interceptor",    "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 5, "sector_min_special": 1 },
+	{ "name": "Slug Scout",          "crew_min": 2, "crew_max": 3, "hull": 9, "sector_min": 4, "sector_max": 6, "sector_min_special": 1, "missiles": 6 },
+	{ "name": "Slug Light-Cruiser",  "crew_min": 3, "crew_max": 6, "hull": 10, "sector_min": 4, "sector_max": 7, "sector_min_special": 2 },
+	{ "name": "Slug Light-Surveyor", "crew_min": 3, "crew_max": 7, "hull": 10, "sector_min": 4, "sector_max": 7, "sector_min_special": 2 },
 	{ "name": "Slug Assault",        "crew_min": 4, "crew_max": 7, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
 	{ "name": "Slug Instigator",     "crew_min": 4, "crew_max": 8, "hull": 11, "missiles": 14, "sector_min": 5, "sector_max": 7 },
 
