@@ -19,7 +19,7 @@
 		
 		<div class="subtitle-nav">
 			<!-- <a href="/search" class="nav-button">Search the ships</a> -->
-			<a href="/" class="nav-button">Explanatory video</a>
+			<a href="https://www.youtube.com/watch?v=mFf5gJgIvH4" class="nav-button">Explanatory video</a>
 		</div>
 
 			<div class="flow">
