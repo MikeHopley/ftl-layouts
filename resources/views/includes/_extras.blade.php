@@ -9,7 +9,7 @@
 	@if($ship->appearsEarly())
 		@if($ship->name == 'Mantis Bomber')
 			<p class="regular">Normally only in sector {{ $ship->sector_min }}+, but can be 
-			sector {{ $ship->sector_min_special }} in the <a href="https://ftl.fandom.com/wiki/Mantis_Ship-Collectors">Ship Collectors</a> event.
+			sector {{ $ship->sector_min_special }}+ in the <a href="https://ftl.fandom.com/wiki/Mantis_Ship-Collectors">Ship Collectors</a> event.
 			</p>
 		@else
 			<p class="regular">Normally only in sector {{ $ship->sector_min }}+, but can be 
