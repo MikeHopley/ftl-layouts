@@ -1,5 +1,5 @@
-RewriteCond %{HTTP_HOST} =ftl-layouts.mikehopley.org
-RewriteRule (.*) https://ftl-layouts.mikehopley.org/$1 [R=301,L]
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=302,L]
 
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
