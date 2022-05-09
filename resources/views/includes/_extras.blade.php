@@ -13,7 +13,7 @@
 			</p>
 		@else
 			<p class="regular">Normally only in sector {{ $ship->sector_min }}+, but can be 
-			sector {{ $ship->sector_min_special }} in the <a href="https://ftl.fandom.com/wiki/Drifting_Refugee_Ship_Distress">Refugee distress</a> event.
+			sector {{ $ship->sector_min_special }}+ in the <a href="https://ftl.fandom.com/wiki/Drifting_Refugee_Ship_Distress">Refugee distress</a> event.
 			</p>
 		@endif
 	@endif
