@@ -35,6 +35,7 @@ class RoomSeeder extends Seeder
 				'origin_x' => $room->x,
 				'origin_y' => $room->y,
 				'shape' => $room->shape ?? 'square',
+				'number' => $room->number ?? 0,
 			]);
 		}
 
@@ -54,6 +55,7 @@ class RoomSeeder extends Seeder
 				'system_id' => $system->id,
 				'type' => 'system',
 				'name' => $room->name,
+				'number' => $room->number ?? 0,
 			]);
 		}
 	}

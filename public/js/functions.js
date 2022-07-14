@@ -1,6 +1,6 @@
 const internals = document.querySelectorAll('.image_rooms')
 const externals = document.querySelectorAll('.image_hull')
-const slots = document.querySelectorAll('.image_slots')
+const slots = document.querySelectorAll('.image_slots, .room-number')
 const crew = document.querySelectorAll('.js_crew')
 const hull = document.querySelectorAll('.js_hull')
 const extras = document.querySelectorAll('.js_extras')
@@ -17,7 +17,11 @@ const hullToggle = document.getElementById('toggleHull')
 
 const testRooms = document.querySelectorAll('.js_system-test')
 const systemLinks = document.querySelectorAll('.js_system-links')
-const allRooms = document.querySelectorAll('.js_system-test, .js_system-links')
+const optional = document.querySelectorAll('.js_optional-overlay')
+const allRooms = document.querySelectorAll('.js_system-test, .js_system-links, .js_room-numbers, .js_optional-overlay')
+
+const slotsHideText = 'Hide weapon slots<br>and room numbers'
+const slotsShowText = 'Show weapon slots<br>and room numbers'
 
 function drawRooms() {
 	allRooms.forEach((room) => {
@@ -51,6 +55,7 @@ function toggleHull() {
 
 function showCrew() {
 	hideHull()
+	hideSlots()
 	hideExtras()
 	hideSystemLinks()
 	roomToggle.disabled = true
@@ -63,6 +68,8 @@ function showCrew() {
 }
 function showExtras() {
 	hideHull()
+	hideCrew()
+	hideSlots()
 	hideSystemLinks()
 	roomToggle.disabled = true
 	slotToggle.disabled = true
@@ -72,6 +79,7 @@ function showExtras() {
 }
 function showHull() {
 	hideCrew()
+	hideSlots()
 	hideExtras()
 	hideSystemLinks()
 	roomToggle.disabled = true
@@ -123,7 +131,7 @@ function toggleSlots() {
 }
 
 function showSlots() {	
-	slotToggle.innerHTML = 'Hide weapon slots'
+	slotToggle.innerHTML = slotsHideText
 	slots.forEach(function(ship) { ship.hidden = false })
 	
 	showRooms()
@@ -131,14 +139,14 @@ function showSlots() {
 }
 
 function hideSlots() {
-	slotToggle.innerHTML = 'Show weapon slots'
+	slotToggle.innerHTML = slotsShowText
 	slots.forEach(function(ship) { ship.hidden = true })
 
 	internals.forEach(function(ship) { ship.hidden = false })
 }
 
 function slotsHidden() {
-	return slotToggle.innerHTML == 'Show weapon slots'
+	return slotToggle.innerHTML == slotsShowText
 }
 function roomsHidden() {
 	return roomToggle.innerHTML == 'Show rooms'
@@ -252,11 +260,14 @@ function showSystem(system) {
 	hideShipSystemLinks(system.dataset.systemship)
 	hideSystems(system.dataset.systemship)
 	system.hidden = false
+	hideSlots()
+	slotToggle.disabled = true
 }
 
 function hideSystems(ship) {
 	let shipSystems = document.querySelectorAll("[data-systemship='"+ship+"']")
 	shipSystems.forEach((system) => { system.hidden = true })
+	slotToggle.disabled = false
 }
 
 function hideAllSystems() {
@@ -265,12 +276,18 @@ function hideAllSystems() {
 
 function hideSystemLinks() {
 	systemLinks.forEach((link) => { link.hidden = true})
+	optional.forEach((overlay) => { overlay.hidden = true})
 }
 
 function hideShipSystemLinks(ship) {
 	systemLinks.forEach((link) => { 
 		if (link.dataset.ship == ship) {
 			link.hidden = true
+		}
+	})
+	optional.forEach((overlay) => { 
+		if (overlay.dataset.ship == ship) {
+			overlay.hidden = true
 		}
 	})
 }
@@ -281,10 +298,16 @@ function showShipSystemLinks(ship) {
 			link.hidden = false
 		}
 	})
+	optional.forEach((overlay) => { 
+		if (overlay.dataset.ship == ship) {
+			overlay.hidden = false
+		}
+	})
 }
 
 function showSystemLinks() {
 	systemLinks.forEach((system) => { system.hidden = false})
+	optional.forEach((overlay) => { overlay.hidden = false})
 }
 
 function hideSystemsUI() {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExplanationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ShipController;
@@ -7,6 +8,7 @@ use App\Http\Controllers\ShipGroupController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class);
+Route::get('/explanation', ExplanationController::class);
 
 Route::get('/auto', [ShipGroupController::class, 'auto']);
 Route::get('/crystal', [ShipGroupController::class, 'crystal']);

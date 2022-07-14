@@ -14,6 +14,14 @@ body {
 .homepage {
 	padding: 2rem;
 }
+.wrapper {
+	max-width: 1500px;
+}
+.homepage div {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .sidebar {
 	width: var(--sidebar-width);
 	background: #ddd;
@@ -534,6 +542,37 @@ td, th {
 	z-index: 1;
 	background: transparent;
 	border-color: transparent;
+}
+.room-number, .optional-overlay {
+	color: white;
+	background: none;
+	border-color: transparent;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+.room-number .system-block {
+	background: none;
+	top: -2px;
+	left: 2px;
+}
+.room-number {
+	z-index: 100;
+}
+
+.optional-overlay {
+	background: hotpink;
+	opacity: 0.3;
+	border-width: 0;
+}
+
+.centred-layout {
+	padding: 2rem 0 !important;
+	margin: 0 auto;
+	max-width: 40rem;
+}
+
+.centred-layout h1 {
+	margin-top: 2rem;
 }
 
 .homepage-crumbs {

@@ -21,6 +21,18 @@
 		</div>
 		
 		@foreach ($ship->rooms as $room)
+	
+			<!-- This is for the room numbers -->
+			<div hidden
+				id="room_number_{{ $room->id }}"
+				class="drop-target room-number js_room-numbers"
+				data-shape="{{ $room->shape }}"
+				data-origin_x="{{ $room->origin_x }}"
+				data-origin_y="{{ $room->origin_y }}"
+			>
+				<div class="system-block">{{ $room->number }}</div>			
+			</div>
+
 			<!-- This is the drop target for systems test -->
 			<div hidden
 				class="drop-target transparent js_system-test"
@@ -45,6 +57,19 @@
 			</div>
 
 			@if($room->system)
+				
+				@if($room->system->optional)
+					<!-- This is for highlighting optional systems -->
+					<div
+						class="drop-target optional-overlay js_optional-overlay"
+						data-shape="{{ $room->shape }}"
+						data-origin_x="{{ $room->origin_x }}"
+						data-origin_y="{{ $room->origin_y }}"
+						data-ship="{{ $ship->id }}"
+					>
+					</div>
+				@endif
+
 				<!-- This is a link for getting system info cards -->
 				<div 
 					class="drop-target transparent js_system-links"

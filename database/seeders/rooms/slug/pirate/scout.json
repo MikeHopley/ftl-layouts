@@ -1,11 +1,11 @@
 {
 	"system": [
-		{ "x": 173, "y": 108, "shape": "vertical", "name": "weapons" },
-		{ "x": 208, "y": 143, "shape": "vertical", "name": "mind control" },
-		{ "x": 138, "y": 143, "shape": "vertical", "name": "oxygen" },
-		{ "x": 103, "y": 214, "shape": "horizontal", "name": "engines" },
-		{ "x": 172, "y": 214, "shape": "vertical", "name": "piloting" },
-		{ "x": 208, "y": 214, "shape": "horizontal", "name": "shields" }
+		{ "x": 173, "y": 108, "number": 0, "shape": "vertical", "name": "weapons" },
+		{ "x": 208, "y": 143, "number": 2, "shape": "vertical", "name": "mind control" },
+		{ "x": 138, "y": 143, "number": 1, "shape": "vertical", "name": "oxygen" },
+		{ "x": 103, "y": 214, "number": 3, "shape": "horizontal", "name": "engines" },
+		{ "x": 172, "y": 214, "number": 4, "shape": "vertical", "name": "piloting" },
+		{ "x": 208, "y": 214, "number": 5, "shape": "horizontal", "name": "shields" }
 	],
 	"empty": [
 	]

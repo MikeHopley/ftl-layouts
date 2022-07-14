@@ -9,8 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
 	<body class="homepage flow">
-		<div>
-			
+		<div>			
 				
 		<p class="breadcrumb homepage-crumbs"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > Enemy ships</p>
 						
@@ -19,7 +18,7 @@
 		
 		<div class="subtitle-nav">
 			<!-- <a href="/search" class="nav-button">Search the ships</a> -->
-			<a href="https://www.youtube.com/watch?v=mFf5gJgIvH4" class="nav-button">Explanatory video</a>
+			<a href="/explanation" class="nav-button">Site explanation</a>
 		</div>
 
 			<div class="flow">

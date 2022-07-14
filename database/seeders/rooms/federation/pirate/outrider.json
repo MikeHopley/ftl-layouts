@@ -1,11 +1,11 @@
 {
 	"system": [
-		{ "x": 155, "y": 98, "shape": "horizontal", "name": "piloting" },
-		{ "x": 120, "y": 203, "shape": "vertical", "name": "hacking" },
-		{ "x": 225, "y": 203, "shape": "vertical", "name": "oxygen" },
-		{ "x": 155, "y": 133, "shape": "square", "name": "weapons" },
-		{ "x": 154, "y": 238, "shape": "horizontal", "name": "engines" },
-		{ "x": 154, "y": 203, "shape": "horizontal", "name": "shields" }
+		{ "x": 155, "y":  98, "number": 0, "shape": "horizontal", "name": "piloting" },
+		{ "x": 120, "y": 203, "number": 2, "shape": "vertical", "name": "hacking" },
+		{ "x": 225, "y": 203, "number": 5, "shape": "vertical", "name": "oxygen" },
+		{ "x": 155, "y": 133, "number": 1, "shape": "square", "name": "weapons" },
+		{ "x": 154, "y": 238, "number": 4, "shape": "horizontal", "name": "engines" },
+		{ "x": 154, "y": 203, "number": 3, "shape": "horizontal", "name": "shields" }
 	],
 	"empty": [
 	]

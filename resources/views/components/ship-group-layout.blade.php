@@ -23,7 +23,7 @@
 			<button id="togglePirate">Show pirate layouts</button>
 		@endif
 
-		<button id="toggleSlots">Show weapon slots</button>
+		<button id="toggleSlots">Show weapon slots<br>and room numbers</button>
 
 		<div class="cluster">
 			@if ($title == 'Automated')

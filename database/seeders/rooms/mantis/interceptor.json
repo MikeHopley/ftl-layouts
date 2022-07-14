@@ -1,13 +1,13 @@
 {
 	"system": [
-		{ "x":  84, "y": 254, "shape": "horizontal", "name": "oxygen" },
-		{ "x":  84, "y": 289, "shape": "horizontal", "name": "doors" },
-		{ "x": 224, "y": 254, "shape": "horizontal", "name": "piloting" },
-		{ "x": 224, "y": 289, "shape": "horizontal", "name": "weapons" },
-		{ "x": 155, "y": 324, "shape": "horizontal", "name": "engines" },	
-		{ "x":  49, "y": 219, "shape": "vertical", "name": "clone bay" },
-		{ "x": 297, "y": 219, "shape": "vertical", "name": "teleporter" },
-		{ "x": 154, "y": 254, "shape": "square", "name": "shields" }
+		{ "x":  84, "y": 254, "number": 1, "shape": "horizontal", "name": "oxygen" },
+		{ "x":  84, "y": 289, "number": 2, "shape": "horizontal", "name": "doors" },
+		{ "x": 224, "y": 254, "number": 5, "shape": "horizontal", "name": "piloting" },
+		{ "x": 224, "y": 289, "number": 6, "shape": "horizontal", "name": "weapons" },
+		{ "x": 155, "y": 324, "number": 4, "shape": "horizontal", "name": "engines" },	
+		{ "x":  49, "y": 219, "number": 0, "shape": "vertical",   "name": "clone bay" },
+		{ "x": 297, "y": 219, "number": 7, "shape": "vertical",   "name": "teleporter" },
+		{ "x": 154, "y": 254, "number": 3, "shape": "square",     "name": "shields" }
 	],
 	"empty": [
 	]

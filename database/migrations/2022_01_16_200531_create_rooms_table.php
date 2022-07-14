@@ -19,6 +19,7 @@ class CreateRoomsTable extends Migration
 			$table->smallInteger('origin_x')->default(0);
 			$table->smallInteger('origin_y')->default(0);
 			$table->string('shape')->default('square');
+			$table->integer('number')->default(0);
 
 			$table->timestamps();
 		});
