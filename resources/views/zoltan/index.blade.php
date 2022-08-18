@@ -37,29 +37,19 @@
 <x-slot name="drones">
 	<tr>
 		<td>Combat 1</td>
-		<td>Combat 2</td>
+		<td>Beam 1</td>
 	</tr>
 	<tr>
 		<td><img src="/img/drones/combat1.png"/></td>
-		<td><img src="/img/drones/combat2.png"/></td>
-	</tr>
-
-	<tr>
-		<td>Beam 1</td>
-		<td>Beam 2</td>
-	</tr>
-	<tr>
 		<td><img src="/img/drones/beam1.png"/></td>
-		<td><img src="/img/drones/beam2.png"/></td>
 	</tr>
-
 	<tr>
+		<td>Beam 2</td>
 		<td>Fire</td>
-		<td></td>
 	</tr>
 	<tr>
+		<td><img src="/img/drones/beam2.png"/></td>
 		<td><img src="/img/drones/fire.png"/></td>
-		<td></td>
 	</tr>
 </x-slot>
 
