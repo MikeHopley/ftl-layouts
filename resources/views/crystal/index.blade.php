@@ -22,4 +22,25 @@
 	</tr>
 </x-slot>
 
+
+<x-slot name="weapons">
+	<tr>
+		<td>Crystal burst 1</td>
+		<td>Crystal burst 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/crystal_burst_1.png"/></td>
+		<td><img src="/img/weapons/crystal_burst_2.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Heavy crystal 1</td>
+		<td>Heavy crystal 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/crystal_heavy_1.png"/></td>
+		<td><img src="/img/weapons/crystal_heavy_2.png"/></td>
+	</tr>
+</x-slot>
+
 </x-ship-group-layout>

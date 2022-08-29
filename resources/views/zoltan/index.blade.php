@@ -53,4 +53,90 @@
 	</tr>
 </x-slot>
 
+<x-slot name="weapons">
+	<tr>
+		<td>Basic laser</td>
+		<td>Burst 1</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/basic.png"/></td>
+		<td><img src="/img/weapons/burst_1.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Burst 2</td>
+		<td>Burst 3</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/burst_2.png"/></td>
+		<td><img src="/img/weapons/burst_3.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Heavy 1</td>
+		<td>Heavy 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/heavy_1.png"/></td>
+		<td><img src="/img/weapons/heavy_2.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Chain laser</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/chain.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Flak 1</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/flak_1.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Mini beam</td>
+		<td>Pike</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/mini.png"/></td>
+		<td><img src="/img/weapons/pike.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Halberd</td>
+		<td>Glaive</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/halberd.png"/></td>
+		<td><img src="/img/weapons/glaive.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Hull beam</td>
+		<td>Fire beam</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/hull_beam.png"/></td>
+		<td><img src="/img/weapons/fire_beam.png"/></td>
+	</tr>
+	
+	<tr>
+		<td>Ion 1</td>
+		<td>Ion stunner</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/ion_1.png"/></td>
+		<td><img src="/img/weapons/ion_stunner.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Heavy ion</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/heavy_ion.png"/></td>
+	</tr>
+</x-slot>
+
 </x-ship-group-layout>

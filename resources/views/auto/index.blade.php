@@ -75,4 +75,68 @@
 	</tr>
 </x-slot>
 
+<x-slot name="weapons">
+	<tr>
+		<td>Basic laser</td>
+		<td>Burst 1</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/basic.png"/></td>
+		<td><img src="/img/weapons/burst_1.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Burst 2</td>
+		<td>Burst 3</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/burst_2.png"/></td>
+		<td><img src="/img/weapons/burst_3.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Heavy 1</td>
+		<td>Heavy 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/heavy_1.png"/></td>
+		<td><img src="/img/weapons/heavy_2.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Chain laser</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/chain.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Mini beam</td>
+		<td>Halberd</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/mini.png"/></td>
+		<td><img src="/img/weapons/halberd.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Ion 1</td>
+		<td>Ion 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/ion_1.png"/></td>
+		<td><img src="/img/weapons/ion_2.png"/></td>
+	</tr>
+
+	<tr>
+		<td>Heavy ion</td>
+		<td>Charge ion</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/heavy_ion.png"/></td>
+		<td><img src="/img/weapons/charge_ion.png"/></td>
+	</tr>
+
+</x-slot>
+
 </x-ship-group-layout>

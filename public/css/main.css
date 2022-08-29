@@ -201,6 +201,9 @@ td, th {
 .explosives h2 {
 	text-align: center;
 }
+.drones-table tr:first-child td {
+	padding-top: 0;
+}
 
 .home-nav {
 	display: flex;

@@ -54,6 +54,12 @@
 					{{ $drones }}
 				</table>
 			@endif
+
+			<h2 class="drones-list">Other weapons</h2>
+
+			<table class="explosives-table drones-table">
+				{{ $weapons }}
+			</table>
 		</div>
 
 		<p class="guide"><a href="https://mikehopley.github.io/Mikes-FTL-stuff/">Mike’s FTL stuff</a> > 
