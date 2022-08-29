@@ -64,6 +64,15 @@
 		<td><img src="/img/weapons/heavy_1.png"/></td>
 		<td><img src="/img/weapons/heavy_2.png"/></td>
 	</tr>
+
+	<tr>
+		<td>Flak 1</td>
+		<td>Flak 2</td>
+	</tr>
+	<tr>
+		<td><img src="/img/weapons/flak_1.png"/></td>
+		<td><img src="/img/weapons/flak_2.png"/></td>
+	</tr>
 	
 	<tr>
 		<td>Mini beam</td>
