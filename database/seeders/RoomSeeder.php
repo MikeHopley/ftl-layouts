@@ -36,6 +36,7 @@ class RoomSeeder extends Seeder
 				'origin_y' => $room->y,
 				'shape' => $room->shape ?? 'square',
 				'number' => $room->number ?? 0,
+				'overflow_room' => $room->overflow ?? null,
 			]);
 		}
 
@@ -56,6 +57,7 @@ class RoomSeeder extends Seeder
 				'type' => 'system',
 				'name' => $room->name,
 				'number' => $room->number ?? 0,
+				'overflow_room' => $room->overflow ?? null,
 			]);
 		}
 	}

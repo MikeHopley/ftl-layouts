@@ -1,13 +1,13 @@
 {
 	"system": [
-		{ "x": 154, "y": 270, "number": 5,  "shape": "horizontal", "name": "piloting" },
-		{ "x": 189, "y": 128, "number": 2,  "shape": "horizontal", "name": "doors" },
-		{ "x": 120, "y": 233, "number": 6,  "shape": "vertical", "name": "medbay" },
-		{ "x": 226, "y": 162, "number": 3,  "shape": "vertical", "name": "oxygen" },
-		{ "x": 118, "y": 128, "number": 1,  "shape": "square", "name": "shields" },
-		{ "x":  85, "y": 198, "number": 7,  "shape": "horizontal", "name": "engines" },
-		{ "x": 226, "y": 234, "number": 4,  "shape": "square", "name": "weapons" },
-		{ "x":  84, "y": 128, "number": 0, "shape": "vertical", "name": "drones" }		
+		{ "x": 189, "y": 128, "number": 2, "overflow": 3, "shape": "horizontal", "name": "doors" },
+		{ "x": 154, "y": 270, "number": 5, "overflow": 6, "shape": "horizontal", "name": "piloting" },
+		{ "x": 120, "y": 233, "number": 6, "overflow": 7, "shape": "vertical", "name": "medbay" },
+		{ "x": 226, "y": 162, "number": 3, "overflow": 4, "shape": "vertical", "name": "oxygen" },
+		{ "x": 118, "y": 128, "number": 1, "overflow": 2, "shape": "square", "name": "shields" },
+		{ "x":  85, "y": 198, "number": 7, "overflow": 6, "shape": "horizontal", "name": "engines" },
+		{ "x": 226, "y": 234, "number": 4, "overflow": 5, "shape": "square", "name": "weapons" },
+		{ "x":  84, "y": 128, "number": 0, "overflow": 1, "shape": "vertical", "name": "drones" }		
 	],
 	"empty": [
 	]

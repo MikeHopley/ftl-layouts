@@ -30,6 +30,8 @@
 		
 		<button id="toggleExtras">Show extra info</button>
 
+		<button id="toggleOverflow">Show overflow</button>
+
 		<button id="toggleTest">Test yourself!</button>
 	</div>
 

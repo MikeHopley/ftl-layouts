@@ -1,6 +1,6 @@
 const internals = document.querySelectorAll('.image_rooms')
 const externals = document.querySelectorAll('.image_hull')
-const slots = document.querySelectorAll('.image_slots, .room-number')
+const slots = document.querySelectorAll('.image_slots')
 const crew = document.querySelectorAll('.js_crew')
 const hull = document.querySelectorAll('.js_hull')
 const extras = document.querySelectorAll('.js_extras')
@@ -14,14 +14,18 @@ const testToggle = document.getElementById('toggleTest')
 const crewToggle = document.getElementById('toggleCrew')
 const extrasToggle = document.getElementById('toggleExtras')
 const hullToggle = document.getElementById('toggleHull')
+const boardingToggle = document.getElementById('toggleOverflow')
 
 const testRooms = document.querySelectorAll('.js_system-test')
 const systemLinks = document.querySelectorAll('.js_system-links')
 const optional = document.querySelectorAll('.js_optional-overlay')
-const allRooms = document.querySelectorAll('.js_system-test, .js_system-links, .js_room-numbers, .js_optional-overlay')
+const boardingRooms = document.querySelectorAll('.js_room-boarding')
+const allRooms = document.querySelectorAll('.js_system-test, .js_system-links, .js_room-boarding, .js_optional-overlay')
+const boarders = document.querySelectorAll('.crystal-boarding, .zoltan-boarding')
+const teleportSound = document.getElementById('teleport-sound')
 
-const slotsHideText = 'Hide weapon slots<br>and room numbers'
-const slotsShowText = 'Show weapon slots<br>and room numbers'
+const slotsShowText = 'Show weapon slots'
+const slotsHideText = 'Hide weapon slots'
 
 function drawRooms() {
 	allRooms.forEach((room) => {
@@ -54,6 +58,7 @@ function toggleHull() {
 }
 
 function showCrew() {
+	showRooms()
 	hideHull()
 	hideSlots()
 	hideExtras()
@@ -67,6 +72,7 @@ function showCrew() {
 	}
 }
 function showExtras() {
+	showRooms()
 	hideHull()
 	hideCrew()
 	hideSlots()
@@ -78,6 +84,7 @@ function showExtras() {
 	extrasToggle.innerHTML = 'Hide extra info'
 }
 function showHull() {
+	showRooms()
 	hideCrew()
 	hideSlots()
 	hideExtras()
@@ -112,7 +119,6 @@ function hideHull() {
 	hull.forEach(function(card) { card.hidden = true })
 	hullToggle.innerHTML = 'Show hull'
 }
-
 function crewHidden() {
 	if (!crewToggle) {
 		return true
@@ -160,13 +166,21 @@ function showRooms() {
 	roomToggle.innerHTML = 'Hide rooms'
 	internals.forEach(function(ship) { ship.hidden = false })
 	externals.forEach(function(ship) { ship.hidden = true })
+	showSystemsUI()
+	showSystemLinks()
 }
 
 function hideRooms() {
 	hideSlots()
+	hideCrew()
+	hideHull()
+	hideExtras()
+	
 	roomToggle.innerHTML = 'Show rooms'
 	internals.forEach(function(ship) { ship.hidden = true })
 	externals.forEach(function(ship) { ship.hidden = false })
+	hideSystemsUI()
+	hideSystemLinks()
 }
 
 function forceShowRooms() {
@@ -204,6 +218,67 @@ function toggleTest() {
 	}
 }
 
+function toggleOverflow() {	
+	if (boardingToggle.innerHTML == 'Boarding overflow') {
+		boardingToggle.innerHTML = 'Stop boarding'
+		beginBoarding()
+	} else {
+		boardingToggle.innerHTML = 'Boarding overflow'
+		endBoarding()
+	}
+}
+
+function beginBoarding() {
+	hideSlots()
+	hideCrew()
+	hideHull()
+	hideExtras()
+	slotToggle.disabled = true
+	hullToggle.disabled = true
+	extrasToggle.disabled = true
+	if (crewToggle) {
+		crewToggle.disabled = true
+	}
+	forceShowRooms()
+	hideSystemsUI()
+	hideSystemLinks()
+	testToggle.disabled = true
+	showBoardingRooms()
+	addTeleportCursor()
+}
+
+function endBoarding() {
+	slotToggle.disabled = false
+	hullToggle.disabled = false
+	extrasToggle.disabled = false
+	if (crewToggle) {
+		crewToggle.disabled = false
+	}
+	showSystemsUI()
+	roomToggle.disabled = false
+	showSystemLinks()
+	testToggle.disabled = false
+	boardingRooms.hidden = true
+	hideBoardingRooms()
+	removeTeleportCursor()
+	boarders.forEach((crew) => crew.hidden = true)
+}
+
+function showBoardingRooms() {
+	boardingRooms.forEach((room) => room.hidden = false)
+}
+
+function hideBoardingRooms() {
+	boardingRooms.forEach((room) => room.hidden = true)
+}
+
+function addTeleportCursor() {
+	document.body.classList.add('teleport')
+}
+function removeTeleportCursor() {
+	document.body.classList.remove('teleport')
+}
+
 function beginTest() {
 	hideSlots()
 	hideCrew()
@@ -212,6 +287,7 @@ function beginTest() {
 	slotToggle.disabled = true
 	hullToggle.disabled = true
 	extrasToggle.disabled = true
+	boardingToggle.disabled = true
 	if (crewToggle) {
 		crewToggle.disabled = true
 	}
@@ -227,6 +303,7 @@ function endTest() {
 	slotToggle.disabled = false
 	hullToggle.disabled = false
 	extrasToggle.disabled = false
+	boardingToggle.disabled = false
 	if (crewToggle) {
 		crewToggle.disabled = false
 	}
@@ -245,6 +322,62 @@ function toggleSystem() {
 		hideSystems(system.dataset.systemship)
 		showShipSystemLinks(system.dataset.systemship)
 	}
+}
+
+function playTeleportSound() {
+	teleportSound.currentTime = 0
+	teleportSound.play()
+}
+
+function showBoarding() {
+	playTeleportSound()
+
+	let room = document.getElementById('room_number_' + Number(this.dataset.room + 1))
+
+	let shipRef = 'ship-' + this.dataset.ship
+	let crystals = document.getElementById('crystal_' + shipRef)
+	let zoltans = document.getElementById('zoltan_' + shipRef)
+
+	// Trigger a reflow to reset the animation
+	let content = crystals.innerHTML
+	crystals.innerHTML = content
+
+	content = zoltans.innerHTML
+	zoltans.innerHTML = content
+
+	crystals.style.top = Number(this.dataset.origin_y) + 2 + 'px'
+	crystals.style.left = Number(this.dataset.origin_x) + 5 + 'px'
+	
+	let shape = this.dataset.shape
+	
+	if (shape === 'horizontal') {
+		document.getElementById(shipRef + '_crystal-1').hidden = false
+		document.getElementById(shipRef + '_crystal-2').hidden = false
+		document.getElementById(shipRef + '_crystal-3').hidden = true
+		document.getElementById(shipRef + '_crystal-4').hidden = true
+	}
+	if (shape === 'vertical') {
+		document.getElementById(shipRef + '_crystal-1').hidden = false
+		document.getElementById(shipRef + '_crystal-2').hidden = true
+		document.getElementById(shipRef + '_crystal-3').hidden = false
+		document.getElementById(shipRef + '_crystal-4').hidden = true
+	}
+	if (shape === 'square') {
+		document.getElementById(shipRef + '_crystal-1').hidden = false
+		document.getElementById(shipRef + '_crystal-2').hidden = false
+		document.getElementById(shipRef + '_crystal-3').hidden = false
+		document.getElementById(shipRef + '_crystal-4').hidden = false
+	}
+	
+	crystals.hidden = false
+
+	let overflow = this.dataset.overflow
+	if (overflow != '') {
+		zoltans.style.top = Number(this.dataset.overflow_y) - 4 + 'px'
+		zoltans.style.left = Number(this.dataset.overflow_x) + 0 + 'px'
+		zoltans.hidden = false
+	}
+
 }
 
 function showSystem(system) {
@@ -392,6 +525,7 @@ function drop_handler(event) {
 	slotToggle.addEventListener('click', toggleSlots)
 	hullToggle.addEventListener('click', toggleHull)
 	extrasToggle.addEventListener('click', toggleExtras)
+	boardingToggle.addEventListener('click', toggleOverflow)
 	
 	if (crewToggle) {
 		crewToggle.addEventListener('click', toggleCrew)
@@ -401,7 +535,6 @@ function drop_handler(event) {
 	if (pirate) {
 		pirate.addEventListener('click', togglePirate)
 	}
-
 	
 	tray.forEach((icon) => {
 		icon.addEventListener('click', toggleSystem)
@@ -409,6 +542,10 @@ function drop_handler(event) {
 
 	systemLinks.forEach((link) => {
 		link.addEventListener('click', toggleSystem)
+	})
+
+	boardingRooms.forEach((room) => {
+		room.addEventListener('click', showBoarding)
 	})
 
 	const closeButtons = document.querySelectorAll('.close-system')

@@ -11,6 +11,9 @@ body {
 	line-height: 1.5;
 	--sidebar-width: 30ch;
 }
+body.teleport {
+	cursor: url('/img/teleport_placed_send.png') 20 24, auto;
+}
 .homepage {
 	padding: 2rem;
 }
@@ -590,4 +593,49 @@ td, th {
 }
 .homepage-sub {
 	color: #666;
+}
+
+.crystal-sprite, .zoltan-sprite {
+	width: 32px;
+	height: 32px;
+	background: url('/img/crystal_base.png') 0 0 no-repeat;
+	animation: crystal-boarding 0.5s steps(8) 1;
+	animation-direction: reverse;
+	position: relative;
+}
+.zoltan-sprite {
+	background: url('/img/energy_base.png') 0 0 no-repeat;
+}
+.crystal-boarding, .zoltan-boarding {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.boarding-line {
+	display: flex;
+}
+.crystal-sprite.sprite-1 {
+	filter: saturate(400%);
+}
+.crystal-sprite.sprite-3 {
+	filter: saturate(150%);
+}
+.crystal-sprite.sprite-4 {
+	filter: saturate(250%);
+}
+.zoltan-sprite {
+	filter: saturate(250%);
+}
+
+@keyframes crystal-boarding {
+	from {
+		background-position: 0;
+		opacity: 1;
+		top: 0;
+	}
+	to { 
+		background-position: -280px;
+		opacity: 0;
+		top: -32px;
+	}
 }

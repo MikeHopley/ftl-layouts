@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
 			ShipSeeder::class,
 			SystemSeeder::class,
 			RoomSeeder::class,
+			OverflowSeeder::class,
 			CrewSeeder::class,
 			ResourcesSeeder::class,
 		]);

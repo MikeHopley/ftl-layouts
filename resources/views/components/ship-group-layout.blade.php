@@ -23,7 +23,7 @@
 			<button id="togglePirate">Show pirate layouts</button>
 		@endif
 
-		<button id="toggleSlots">Show weapon slots<br>and room numbers</button>
+		<button id="toggleSlots">Show weapon slots</button>
 
 		<div class="cluster">
 			@if ($title == 'Automated')
@@ -35,6 +35,8 @@
 		</div>
 		
 		<button id="toggleExtras">Show extra info</button>
+
+		<button id="toggleOverflow">Boarding overflow</button>
 
 		<button id="toggleTest">Test yourself!</button>
 	</div>
@@ -68,6 +70,7 @@
 		<h1>{{ $title }} ships</h1>
 
 		<div class="flow content">
+			<audio id="teleport-sound" src="/audio/teleport.mp3" hidden></audio>
 			{{ $slot }}
 			
 			<div class="ship-grid not-flow">

@@ -1,18 +1,18 @@
 {
 	"system": [
-		{ "x": 153, "y": 103, "number": 1,  "shape": "horizontal", "name": "piloting" },
-		{ "x": 153, "y": 137, "number": 2,  "shape": "horizontal", "name": "doors" },
-		{ "x": 226, "y": 173, "number": 4,  "shape": "vertical",   "name": "medbay" },
-		{ "x": 226, "y": 138, "number": 3,  "shape": "horizontal", "name": "oxygen" },
-		{ "x": 226, "y": 279, "number": 7,  "shape": "square",     "name": "shields" },
-		{ "x":  84, "y": 278, "number": 9,  "shape": "square",     "name": "engines" },
-		{ "x":  84, "y": 173, "number": 11, "shape": "square",     "name": "weapons" },
-		{ "x": 260, "y": 172, "number": 5,  "shape": "vertical",   "name": "drones" }		
+		{ "x": 153, "y": 103, "number": 1,  "overflow": ,  "shape": "horizontal", "name": "piloting" },
+		{ "x": 153, "y": 137, "number": 2,  "overflow": ,  "shape": "horizontal", "name": "doors" },
+		{ "x": 226, "y": 173, "number": 4,  "overflow": ,  "shape": "vertical",   "name": "medbay" },
+		{ "x": 226, "y": 138, "number": 3,  "overflow": ,  "shape": "horizontal", "name": "oxygen" },
+		{ "x": 226, "y": 279, "number": 7,  "overflow": ,  "shape": "square",     "name": "shields" },
+		{ "x":  84, "y": 278, "number": 9,  "overflow": ,  "shape": "square",     "name": "engines" },
+		{ "x":  84, "y": 173, "number": 11, "overflow": , "shape": "square",     "name": "weapons" },
+		{ "x": 260, "y": 172, "number": 5,  "overflow": , "shape": "vertical",   "name": "drones" }		
 	],
 	"empty": [
-		{ "x": 120, "y": 102, "number": 0,  "shape": "vertical" },
-		{ "x":  85, "y": 243, "number": 10, "shape": "horizontal" },
-		{ "x": 226, "y": 243, "number": 6,  "shape": "horizontal" },
-		{ "x": 153, "y": 316, "number": 8,  "shape": "horizontal" }
+		{ "x": 120, "y": 102, "number": 0,  "overflow": , "shape": "vertical" },
+		{ "x":  85, "y": 243, "number": 10, "overflow": , "shape": "horizontal" },
+		{ "x": 226, "y": 243, "number": 6,  "overflow": , "shape": "horizontal" },
+		{ "x": 153, "y": 316, "number": 8,  "overflow": , "shape": "horizontal" }
 	]
 }
