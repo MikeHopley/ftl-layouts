@@ -1,18 +1,18 @@
 {
 	"system": [
-		{ "x": 155, "y": 238, "number": 3,  "shape": "horizontal", "name": "piloting" },
-		{ "x":  50, "y": 310, "number": 9,  "shape": "vertical",   "name": "oxygen" },
-		{ "x": 296, "y": 310, "number": 11, "shape": "vertical",   "name": "doors" },
-		{ "x":  84, "y": 345, "number": 8,  "shape": "square",     "name": "weapons" },
-		{ "x": 155, "y": 274, "number": 4,  "shape": "horizontal", "name": "teleporter" },	
-		{ "x": 155, "y":  98, "number": 0,  "shape": "square",     "name": "clone bay" },
-		{ "x": 155, "y": 379, "number": 7,  "shape": "horizontal", "name": "engines" },
-		{ "x": 225, "y": 345, "number": 10, "shape": "square",     "name": "shields" }
+		{ "x": 155, "y": 238, "number": 3,  "overflow": 2, "shape": "horizontal", "name": "piloting" },
+		{ "x":  50, "y": 310, "number": 9,  "overflow": 8, "shape": "vertical",   "name": "oxygen" },
+		{ "x": 296, "y": 310, "number": 11, "overflow": 10, "shape": "vertical",   "name": "doors" },
+		{ "x":  84, "y": 345, "number": 8,  "overflow": 6, "shape": "square",     "name": "weapons" },
+		{ "x": 155, "y": 274, "number": 4,  "overflow": 3, "shape": "horizontal", "name": "teleporter" },	
+		{ "x": 155, "y":  98, "number": 0,  "overflow": 1, "shape": "square",     "name": "clone bay" },
+		{ "x": 155, "y": 379, "number": 7,  "overflow": 6, "shape": "horizontal", "name": "engines" },
+		{ "x": 225, "y": 345, "number": 10, "overflow": 6, "shape": "square",     "name": "shields" }
 	],
 	"empty": [
-		{ "x": 155, "y": 168, "number": 1, "shape": "square" },
-		{ "x": 120, "y": 203, "number": 2, "shape": "vertical" },
-		{ "x": 225, "y": 203, "number": 5, "shape": "vertical" },
-		{ "x": 155, "y": 309, "number": 6, "shape": "square" }
+		{ "x": 155, "y": 168, "number": 1, "overflow": 0, "shape": "square" },
+		{ "x": 120, "y": 203, "number": 2, "overflow": 3, "shape": "vertical" },
+		{ "x": 225, "y": 203, "number": 5, "overflow": 1, "shape": "vertical" },
+		{ "x": 155, "y": 309, "number": 6, "overflow": 4, "shape": "square" }
 	]
 }

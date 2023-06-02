@@ -1,17 +1,17 @@
 {
 	"system": [
-		{ "x": 173, "y": 133, "number": 3,  "shape": "vertical", "name": "piloting" },
-		{ "x": 244, "y": 237, "number": 10, "shape": "vertical", "name": "doors" },
-		{ "x":  68, "y": 203, "number": 7,  "shape": "vertical", "name": "clone bay" },
-		{ "x": 103, "y":  98, "number": 0,  "shape": "vertical", "name": "shields" },
-		{ "x": 103, "y": 239, "number": 9,  "shape": "vertical", "name": "engines" },
-		{ "x": 245, "y":  99, "number": 1,  "shape": "vertical", "name": "weapons" },
-		{ "x":  68, "y": 133, "number": 2,  "shape": "vertical", "name": "cloaking" },
-		{ "x": 280, "y": 134, "number": 4,  "shape": "vertical", "name": "mind control" },
-		{ "x": 280, "y": 205, "number": 8,  "shape": "vertical", "name": "teleporter" }
+		{ "x": 173, "y": 133, "number": 3,  "overflow": 5, "shape": "vertical", "name": "piloting" },
+		{ "x": 244, "y": 237, "number": 10, "overflow": 6, "shape": "vertical", "name": "doors" },
+		{ "x":  68, "y": 203, "number": 7,  "overflow": 5, "shape": "vertical", "name": "clone bay" },
+		{ "x": 103, "y":  98, "number": 0,  "overflow": 5, "shape": "vertical", "name": "shields" },
+		{ "x": 103, "y": 239, "number": 9,  "overflow": 5, "shape": "vertical", "name": "engines" },
+		{ "x": 245, "y":  99, "number": 1,  "overflow": 6, "shape": "vertical", "name": "weapons" },
+		{ "x":  68, "y": 133, "number": 2,  "overflow": 5, "shape": "vertical", "name": "cloaking" },
+		{ "x": 280, "y": 134, "number": 4,  "overflow": 6, "shape": "vertical", "name": "mind control" },
+		{ "x": 280, "y": 205, "number": 8,  "overflow": 6, "shape": "vertical", "name": "teleporter" }
 	],
 	"empty": [
-		{ "x": 102, "y": 169, "number": 5, "shape": "square" },
-		{ "x": 208, "y": 169, "number": 6, "shape": "square" }
+		{ "x": 102, "y": 169, "number": 5, "overflow": 0, "shape": "square" },
+		{ "x": 208, "y": 169, "number": 6, "overflow": 3, "shape": "square" }
 	]
 }

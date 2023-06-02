@@ -29,6 +29,10 @@ class RoomSeeder extends Seeder
 		$json = file_get_contents(database_path() . $path);
 		$rooms = json_decode($json);
 
+		if (!$rooms) {
+			throw new Exception("Room error on {$ship->name}");
+		}
+
 		foreach ($rooms->empty as $room) {
 			Room::create([
 				'ship_id' => $ship->id,

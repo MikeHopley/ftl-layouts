@@ -1,13 +1,13 @@
 {
 	"system": [
-		{ "x": 173, "y": 158, "number": 2, "shape": "vertical", "name": "clone bay" },
-		{ "x": 208, "y": 193, "number": 4, "shape": "square", "name": "engines" },
-		{ "x": 138, "y": 123, "number": 0, "shape": "vertical", "name": "shields" },	
-		{ "x": 103, "y": 194, "number": 3, "shape": "square", "name": "cloaking" },
-		{ "x": 207, "y": 264, "number": 7, "shape": "vertical", "name": "oxygen" },
-		{ "x": 209, "y": 123, "number": 1, "shape": "vertical", "name": "weapons" },
-		{ "x": 172, "y": 264, "number": 6, "shape": "vertical", "name": "piloting" },
-		{ "x": 138, "y": 264, "number": 5, "shape": "vertical", "name": "teleporter" }
+		{ "x": 173, "y": 158, "number": 2, "overflow": 3, "shape": "vertical", "name": "clone bay" },
+		{ "x": 208, "y": 193, "number": 4, "overflow": 2, "shape": "square", "name": "engines" },
+		{ "x": 138, "y": 123, "number": 0, "overflow": 3, "shape": "vertical", "name": "shields" },	
+		{ "x": 103, "y": 194, "number": 3, "overflow": 0, "shape": "square", "name": "cloaking" },
+		{ "x": 207, "y": 264, "number": 7, "overflow": 4, "shape": "vertical", "name": "oxygen" },
+		{ "x": 209, "y": 123, "number": 1, "overflow": 4, "shape": "vertical", "name": "weapons" },
+		{ "x": 172, "y": 264, "number": 6, "overflow": 5, "shape": "vertical", "name": "piloting" },
+		{ "x": 138, "y": 264, "number": 5, "overflow": 3, "shape": "vertical", "name": "teleporter" }
 	],
 	"empty": [
 	]

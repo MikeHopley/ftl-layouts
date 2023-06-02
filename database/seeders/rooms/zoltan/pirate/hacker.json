@@ -1,13 +1,13 @@
 {
 	"system": [
-		{ "x": 155, "y": 103, "number": 0, "shape": "horizontal", "name": "hacking" },
-		{ "x": 189, "y": 174, "number": 2, "shape": "horizontal", "name": "piloting" },
-		{ "x": 154, "y": 315, "number": 7, "shape": "horizontal", "name": "clone bay" },
-		{ "x": 120, "y": 279, "number": 6, "shape": "vertical", "name": "engines" },
-		{ "x": 225, "y": 208, "number": 4, "shape": "vertical", "name": "oxygen" },
-		{ "x": 189, "y": 244, "number": 5, "shape": "vertical", "name": "weapons" },
-		{ "x": 155, "y": 137, "number": 1, "shape": "vertical", "name": "doors" },
-		{ "x": 119, "y": 208, "number": 3, "shape": "square", "name": "shields" }
+		{ "x": 155, "y": 103, "number": 0, "overflow": 1, "shape": "horizontal", "name": "hacking" },
+		{ "x": 189, "y": 174, "number": 2, "overflow": 4, "shape": "horizontal", "name": "piloting" },
+		{ "x": 154, "y": 315, "number": 7, "overflow": 5, "shape": "horizontal", "name": "clone bay" },
+		{ "x": 120, "y": 279, "number": 6, "overflow": 7, "shape": "vertical", "name": "engines" },
+		{ "x": 225, "y": 208, "number": 4, "overflow": 5, "shape": "vertical", "name": "oxygen" },
+		{ "x": 189, "y": 244, "number": 5, "overflow": 7, "shape": "vertical", "name": "weapons" },
+		{ "x": 155, "y": 137, "number": 1, "overflow": 2, "shape": "vertical", "name": "doors" },
+		{ "x": 119, "y": 208, "number": 3, "overflow": 6, "shape": "square", "name": "shields" }
 	],
 	"empty": [
 	]
