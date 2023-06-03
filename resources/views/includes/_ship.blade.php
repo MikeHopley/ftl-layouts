@@ -56,7 +56,7 @@
 				data-ship="{{ $ship->id }}"
 			>
 		
-				<div class="system-block">{{ $room->number }}</div>
+				<!-- <div class="system-block">{{ $room->number }}</div> -->
 			</div>
 
 			<!-- This is the drop target for systems test -->
