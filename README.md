@@ -17,5 +17,4 @@ The site uses the Laravel PHP framework. It requires a standard, basic hosting e
 
 The database is designed to be fully reset at any time:
 
-* `php artisan migrate:fresh`
-* ...then `php artisan db:seed`
+* `php artisan migrate:fresh --seed`
