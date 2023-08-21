@@ -41,11 +41,10 @@
 		</div>
 		
 		@foreach ($ship->rooms as $room)
-	
-			<!-- This is for boarding overflow -->
+			<!-- This is for room numbers -->
 			<div hidden
 				id="room_number_{{ $room->id }}"
-				class="drop-target room-number js_room-boarding"
+				class="drop-target room-number js_room-numbers"
 				data-shape="{{ $room->shape }}"
 				data-origin_x="{{ $room->origin_x }}"
 				data-origin_y="{{ $room->origin_y }}"
@@ -56,7 +55,23 @@
 				data-ship="{{ $ship->id }}"
 			>
 		
-				<!-- <div class="system-block">{{ $room->number }}</div> -->
+				<div class="system-block">{{ $room->number }}</div>
+			</div>
+
+	
+			<!-- This is for boarding overflow -->
+			<div hidden
+				id="room_number_{{ $room->id }}_boarding"
+				class="drop-target room-number js_room-boarding"
+				data-shape="{{ $room->shape }}"
+				data-origin_x="{{ $room->origin_x }}"
+				data-origin_y="{{ $room->origin_y }}"
+				data-overflow="{{ $room->overflow_room }}"
+				data-overflow_x="{{ $room->overflow_x }}"
+				data-overflow_y="{{ $room->overflow_y }}"
+				data-room="{{ $room->number }}"
+				data-ship="{{ $ship->id }}"
+			>
 			</div>
 
 			<!-- This is the drop target for systems test -->

@@ -1,6 +1,7 @@
 const internals = document.querySelectorAll('.image_rooms')
 const externals = document.querySelectorAll('.image_hull')
 const slots = document.querySelectorAll('.image_slots')
+const roomNumbers = document.querySelectorAll('.js_room-numbers')
 const crew = document.querySelectorAll('.js_crew')
 const hull = document.querySelectorAll('.js_hull')
 const extras = document.querySelectorAll('.js_extras')
@@ -20,12 +21,12 @@ const testRooms = document.querySelectorAll('.js_system-test')
 const systemLinks = document.querySelectorAll('.js_system-links')
 const optional = document.querySelectorAll('.js_optional-overlay')
 const boardingRooms = document.querySelectorAll('.js_room-boarding')
-const allRooms = document.querySelectorAll('.js_system-test, .js_system-links, .js_room-boarding, .js_optional-overlay')
+const allRooms = document.querySelectorAll('.js_system-test, .js_system-links, .js_room-boarding, .js_optional-overlay, .js_room-numbers')
 const boarders = document.querySelectorAll('.crystal-boarding, .zoltan-boarding')
 const teleportSound = document.getElementById('teleport-sound')
 
-const slotsShowText = 'Show weapon slots'
-const slotsHideText = 'Hide weapon slots'
+const slotsShowText = 'Show numbering'
+const slotsHideText = 'Hide numbering'
 
 function drawRooms() {
 	allRooms.forEach((room) => {
@@ -139,6 +140,7 @@ function toggleSlots() {
 function showSlots() {	
 	slotToggle.innerHTML = slotsHideText
 	slots.forEach(function(ship) { ship.hidden = false })
+	roomNumbers.forEach(function(ship) { ship.hidden = false })
 	
 	showRooms()
 	internals.forEach(function(ship) { ship.hidden = true })
@@ -147,6 +149,7 @@ function showSlots() {
 function hideSlots() {
 	slotToggle.innerHTML = slotsShowText
 	slots.forEach(function(ship) { ship.hidden = true })
+	roomNumbers.forEach(function(ship) { ship.hidden = true })
 
 	internals.forEach(function(ship) { ship.hidden = false })
 }
