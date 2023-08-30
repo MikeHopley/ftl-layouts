@@ -5,6 +5,8 @@
 	:groupLayout="true"
 >
 
+<h1>Slugs are slimy wankers, you can’t trust them</h1>
+
 <p>All Slug ships have Slug Repair Gel, including pirates.</p>
 
 <x-slot name="explosives">
