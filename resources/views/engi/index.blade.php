@@ -6,7 +6,7 @@
 	:hasDrones="true"
 >
 
-<p>Engi ships never run. They have Med-bot Dispersal.</p>
+<p>Engi ships never run or surrender. They have Med-bot Dispersal.</p>
 
 <x-slot name="explosives">
 	<tr>

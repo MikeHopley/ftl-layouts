@@ -6,6 +6,10 @@
 	:hasDrones="true"
 >
 
+<p>Zoltan ships never run. They also never surrender, except for the <a href="https://ftl.fandom.com/wiki/Zoltan_science_ship">science vessel</a> and the <a href="https://ftl.fandom.com/wiki/Unarmed_Zoltan_transport">unarmed transport</a>.</p>
+
+<p>Pirates are different, and may run or surrender.</p>
+
 <x-slot name="explosives">
 	<tr>
 		<th><img src="/img/explosives/small_launcher.png"/></th>

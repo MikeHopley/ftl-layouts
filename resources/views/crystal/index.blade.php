@@ -5,7 +5,7 @@
 	:groupLayout="true"
 >
 
-<p>Crystal ships can never be found outside the Crystal Homeworlds. They use Crystal weapons exclusively.</p>
+<p>Crystal ships are only found in the Crystal Homeworlds. They use Crystal weapons exclusively. They may surrender but will never run.</p>
 
 <x-slot name="explosives">
 	<tr>

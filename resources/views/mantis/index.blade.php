@@ -5,7 +5,9 @@
 	:groupLayout="true"
 >
 
-<p>Mantis ships never surrender or run, except in the <a href="https://ftl.fandom.com/wiki/Mantis_Ship-Collectors">Ship Collectors</a> event. In most events, exactly one of their crew is an Engi. Those statements do not apply to pirates.</p>
+<p>Mantis ships never surrender or run, except in the <a href="https://ftl.fandom.com/wiki/Mantis_Ship-Collectors">Ship Collectors</a> event. In most events, exactly one of their crew is an Engi.</p>
+
+<p>Pirates are different. They have random crew, and may run or surrender.</p>
 
 <x-slot name="explosives">
 	<tr>

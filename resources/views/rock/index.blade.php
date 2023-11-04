@@ -5,7 +5,9 @@
 	:groupLayout="true"
 >
 
-<p>Rock sectors have events that force a pirate Rock ship.</p>
+<p>Rock sectors have three events that force a pirate Rock ship (<a href="https://ftl.fandom.com/wiki/Rock_pirate_fight">1</a>, <a href="https://ftl.fandom.com/wiki/Rock_pirate_fight_in_asteroid_field">2</a>, <a href="https://ftl.fandom.com/wiki/Rock_pirate_fight_near_sun">3</a>). These pirates only have Rock crew, and will never run or surrender.</p>
+
+<p>Regular Rock ships may surrender, but they never run (except <a href="https://ftl.fandom.com/wiki/Rock_war_vessel_encounter">the Elite Assault</a>).</p>
 
 <p>All Rock ships have Rock Hull Plating, including pirates.</p>
 
